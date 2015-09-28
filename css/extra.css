@@ -97,3 +97,11 @@ button.btn.btn-default:hover{
 option{
 	color:#2c3e50;
 }
+
+h2{
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+	word-wrap:break-word;
+}
