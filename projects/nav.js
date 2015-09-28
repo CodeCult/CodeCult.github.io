@@ -56,7 +56,7 @@ document.write("                    <\/li>");
 document.write("                    <!-- Ik heb hier dropdowns van gemaakt omdat dat een snelle manier was om de layout consistent te houden...maar het is niet echt nodig qua inhoud-->");
 document.write("                   <li class=\"page-scroll\">");
 document.write("                           ");
-document.write("                                <li><a href=\"codeherfst.html\" class=\"btn btn-md\" style=\"padding-top:0; padding-bottom:0; margin:5px; padding:10px 15px;\" type=\"button\" id=\"dropdownMenu1\" >CodeHerfst <\/a><\/li>");
+document.write("                                <li><a href=\"codeherfst.html\" class=\"btn btn-md\" style=\"padding-top:0; padding-bottom:0; margin:5px; padding:10px 15px; display:flex;\" type=\"button\" id=\"dropdownMenu1\" >CodeHerfst <\/a><\/li>");
 document.write("");
 document.write("                    <\/li>");
 // document.write("                    <li class=\"page-scroll\">");
