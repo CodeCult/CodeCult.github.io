@@ -25,7 +25,7 @@ document.write("                            <span class=\"caret\"><\/span>");
 document.write("                          <\/button>");
 document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
 document.write("                            <li><a href=\"basisschool.html\">Basisscholen<\/a><\/li>");
-document.write("                            <!--<li><a href=\"middelbarescholen.html\">Middelbare scholen<\/a><\/li>-->");
+document.write("                            <li><a href=\"middelbarescholen.html\">Middelbare scholen<\/a><\/li>");
 document.write("                          <\/ul>");
 document.write("                        <\/div>");
 document.write("                    <\/li>");
