@@ -186,11 +186,13 @@ header .intro-text .skills {
 section {
     padding: 100px 0;
 }
-
-section h2 {
-    margin: 0;
-    font-size: 3em;
+@media (min-width: 768px) {
+    section h2 {
+        margin: 0;
+        font-size: 3em;
+    }
 }
+
 
 section.success {
     color: #fff;

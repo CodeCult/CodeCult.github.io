@@ -98,7 +98,14 @@ option{
 	color:#2c3e50;
 }
 
-h2{
+h2 small,
+.h2 small,
+h2 .small,
+.h2 .small {
+  font-size: 45%;
+}
+
+.toolarge{
 	-moz-hyphens:auto;
 	-ms-hyphens:auto;
 	-webkit-hyphens:auto;
