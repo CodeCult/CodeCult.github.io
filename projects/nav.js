@@ -32,7 +32,7 @@ document.write("                    <\/li>");
 document.write("                  <li class=\"page-scroll\">");
 document.write("                        <div class=\"dropdown\">");
 document.write("                          <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-document.write("                            Voor particulieren");
+document.write("                            Voor jou");
 document.write("                            <span class=\"caret\"><\/span>");
 document.write("                          <\/button>");
 document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
