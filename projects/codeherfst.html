@@ -318,7 +318,7 @@
     <div class="ss-required-asterisk" aria-hidden="true">*Verplicht veld</div> <br></div>
     <div class="row">
     <div class="col-lg-9 col-lg-offset-1">
-        <div class="ss-form"><form action="https://docs.google.com/a/perceptum.nl/forms/d/1r6v3TnN5LdtVTF63h11aP-iIPh97x5DGdpTjw2-OXx8/formResponse?embedded=true" method="POST" id="ss-form" target="_blank" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+        <div class="ss-form"><form action="https://docs.google.com/a/perceptum.nl/forms/d/1r6v3TnN5LdtVTF63h11aP-iIPh97x5DGdpTjw2-OXx8/formResponse?embedded=true" method="POST" id="ss-form" target="_blank" onsubmit="reactie()"><ol role="list" class="ss-question-list" style="padding-left: 0">
         <div class="ss-form-question errorbox-good" role="listitem">
         <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
         <label class="ss-q-item-label" for="entry_598889568"><div class="ss-q-title">Volledige naam
@@ -409,10 +409,16 @@
         <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
         <input type="submit" name="submit" value="Verstuur" id="ss-submit" class="jfk-button jfk-button-action ">
         </td>
-        </tr></tbody></table></div></ol></form></div></div>
+        </tr></tbody></table></div></ol></form></div>
+        <p id="verzonden"><p>
+        </div>
         </div>
     </div>
-
+    <script>
+    function reactie() {
+      document.getElementById("verzonden").innerHTML= "Bedankt, je inschrijving is geregistreerd! Wij zullen spoedig contact met je opnemen.";
+    }  
+    </script>
     </section>
 
      <footer class="text-center">
