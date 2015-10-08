@@ -78,7 +78,7 @@ document.write("            <\/div>");
 document.write("            <!-- \/.navbar-collapse -->");
 document.write("        <\/div>");
 document.write("        <!-- \/.container-fluid -->");
-document.write("    <\/nav>");
+// document.write("    <\/nav>");
 
 /* 
 Originele code, gebruik om te bewerken en transformeer naar javascript op: http://www.accessify.com/tools-and-wizards/developer-tools/html-javascript-convertor/

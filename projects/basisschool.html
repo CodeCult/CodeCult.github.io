@@ -34,6 +34,13 @@
       ga('send', 'pageview');
 
     </script>
+    // <script>
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // }); 
+    // </script>
 </head>
 
 <body id="page-top" class="index">
@@ -42,7 +49,19 @@
     <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
     nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
     <script type="text/javascript" src="nav.js"> </script>
-
+    <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="well bs-sidebar affix" id="sidebar">
+        <h4>Wij verzorgen</h4><hr style="border-color:#2c3e50;">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#top">Samengevat</a></li>
+            <li><a href="#regulier">Reguliere<br>lessen</a></li>
+            <li><a href="#workshop">Workshops en<br>Cursussen</a></li>
+            <li><a href="#NSA">Naschoolse<br>activiteit</a></li>
+            <li><a href="#voorbeeld">Lesprogramma <br> voorbeeld</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div> <!--well bs-sidebar affix-->
+</nav>
 
 
 
@@ -56,12 +75,7 @@
                         <hr class="star-light">
                         <div class="skills">Workshops, lessen en materiaal voor basisscholen.</div>
                         <br/>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <a href="#regulier"><button type="button" class="btn btn-default">Reguliere<br> lessen</button></a>
-                            <a href="#NSO"><button type="button" class="btn btn-default">Naschoolse<br> activiteit</button></a>
-                            <a href="#voorbeeld"><button type="button" class="btn btn-default">Lesprogramma <br> voorbeeld</button></a>
 
-                        </div>
                     </div>
                 </div>
             </div>
@@ -74,76 +88,92 @@
                 <div class="col-lg-12 text-center">
                     <h2>Reguliere lessen</h2>
                     <hr class="star-primary">
-                    <h2><a href="#NSO"><i class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#top"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h2><a href="#NSO"><i class="fa fa-arrow-circle-down pull-right"></i></a></h2> -->
+                    <!-- <h2><a href="#top"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Wat is het?</h3>
-                <p>Om kinderen kennis te laten maken met programmeren en ze te helpen computers beter te begrijpen bieden wij een lesprogramma aan. Dit programma volgt een logische en prettige werkwijze met onze motto als uitgangspunt: "Leren door Creëren". </p>
+            <div class="col-lg-8 col-lg-offset-2">
+                <p>Om kinderen kennis te laten maken met programmeren en ze te helpen computers beter te begrijpen bieden wij een lesprogramma aan. Dit programma volgt een logische en prettige werkwijze met ons motto als uitgangspunt: "Leren door Creëren". </p>
+                <p>Onder begeleiding van onze codemeesters maken de leerlingen een spel dat ze aan het einde van het blok met trots kunnen presenteren. Hierbij wordt niet alleen de fantasie van de kinderen geprikkeld, maar ook hun vermogen om problemen te ontleden gestimuleerd. Door ze vragen te stellen zoals: "Uit welke onderdelen bestaat je spel? Hoe sluiten die bij elkaar aan?" worden ze uitgedaagd om nieuwe inzichten te krijgen.</p>
             </div>
-            <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Details</h3>
-                <p>Onder onze begeleiding maken de leerlingen een spel die ze aan het einde van het blok met trots kunnen presenteren. Hierbij wordt niet alleen de fantasie van de kinderen geprikkeld, maar ook hun vermogen om problemen te ontleden gestimuleerd. Door ze vragen te stellen zoals: "Uit welke onderdelen bestaat je spel? Hoe sluiten die bij elkaar aan?" worden ze uitgedaagd om nieuwe inzichten te krijgen.</p>
-            </div>
-            <div class="col-sm-12 text-center">
+            <div class="col-lg-8 col-lg-offset-2">
             <p>
             Omdat iedere school anders is, wordt ieder lesprogramma op maat gemaakt in overleg met de school.<br /> <em><a style="color:#2c3e50" href="#voorbeeld">Onderaan kunt u een voorbeeld vinden van hoe zo'n programma er uit zou kunnen zien.</a></em>
             </p>
-
+            <p> Voor meer informatie of om een afspraak te maken kunt u ons e-mailen op <a href="mailto:info@codecult.nl">info@codecult.nl</a> of bellen op 020 705 1000.</p>
             </div></div></div>
     </section>
 
 
-    <section id="NSO" class="success">
+    <section id="workshop" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Naschoolse activiteit</h2>
+                    <h2>Workshops en cursussen</h2>
                     <hr class="star-light">
-                    <h2><a href="#voorbeeld"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#regulier"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2>                </div>
+                </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Wat is het?</h3>
-                <p>Wekelijks na school met een klasje programmeerlessen volgen.</p>
-            </div>
-            <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Details</h3>
-                <p>Afhankelijk van het lesdoel leren wij de klas een website bouwen, een spel maken of iets anders.</p>
+                <div class="col-lg-8 col-lg-offset-2">
+                <p>CodeCult kan verschillende workshops en cursussen aanbieden op uw school. Omdat we met eigen trainers werken, is ervaring met informatica van uw kant geen vereiste. We maken hierbij onderscheid tussen visuele programmeertalen en tekstgebaseerde programmeertalen.</p>
+                <p><em style="color:#2c3e50">Visuele programmeertalen</em> zijn dé manier om kinderen met programmeren in aanraking te brengen. Leerlingen hoeven niet alle commando’s uit hun hoofd uit te typen, maar plakken in de programmeeromgeving blokken aan elkaar. Hierdoor hoeven ze niet eerst de droge ‘grammatica’ van de taal te leren, maar kunnen ze al snel aan de slag met het maken van bijvoorbeeld een game. Omdat de leerlingen wel in aanraking komen met belangrijke programmeerconcepten, worden ze voorbereid op het werken in een tekstgebaseerde programmeertaal.</p>
+                <p><em style="color:#2c3e50">Tekstgebaseerde programmeertalen</em> zijn wat moeilijker te leren, maar bieden uiteindelijk meer mogelijkheden. Er zijn verschillende talen voor verschillende doeleinden: met HTML en CSS kunnen leerlingen bijvoorbeeld een website bouwen, met Python (een zeer gangbare programmeertaal) is vrijwel alles mogelijk. Omdat tekstuele programmeertalen moeilijker zijn om te leren, raden wij deze talen voor de basisschool af.</p>
+
+                <p><em style="color:#2c3e50">Workshops</em> van 1 tot 3 lessen zijn bedoeld om de kinderen kennis te laten maken met programmeren door middel van korte opdrachten. In verband met de korte duur raden wij aan een visuele programmeertaal te kiezen.</p>
+                <p><em style="color:#2c3e50">Cursussen</em> van bijvoorbeeld 8 of 16 lessen gaan dieper op de materie in. Hierbij zijn verschillende mogelijkheden, waaronder het maken van een game of een website. Het is mogelijk kinderen helemaal vrij te laten in het kiezen van een project, maar het combineren met een ander vak (bijvoorbeeld door een website als vorm voor een werkstuk te kiezen) of maken van een programma voor een ‘opdrachtgever’ zijn ook mogelijkheden. Hierdoor wordt het programmeren geen doel op zich, maar een waardevol middel om doelen te bereiken.</p>
+
+                </div>
             </div>
         </div>
     </section>
+
+
+    <section id="NSA">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Naschoolse Activiteit</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                <p> Al het bovenstaande kan ook als naschoolse activiteit verzorgd worden. Bel gerust even voor meer informatie op 020 705 1000, of e-mail naar <a href="mailto:info@codecult.nl">info@codecult.nl.</a></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     
-    <section id="voorbeeld">
+    <section id="voorbeeld" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Lesprogramma Voorbeeld</h2>
-                    <hr class="star-primary">
-                    <h2><a href="#NSO"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2>
-                    <h2><a href="#top"><i class="fa fa-home pull-right"></i></a></h2>                
+                    <hr class="star-light">
+             
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-8 col-lg-offset-2">
                     <p>Les 1: Introductie &amp; fysiek programmeren <br />
                     Les 2-3: Hour of code met uitleg<br />
                     Les 4-5: Introductie Scratch<br />
                     Les 6-12: Scratch project </p>
                     <br>
-                    <h4 class="nocaps" style="color:#18bc9c">Les 1: Introductie &amp; fysiek programmeren </h4><p>
+                    <h4 class="nocaps" style="color:#2c3e50">Les 1: Introductie &amp; fysiek programmeren </h4><p>
                     Om het enthousiasme van de kinderen te wekken gaan wij ze door middel van fysiek programmeren laten zien hoe programmeren in de echte wereld toepasbaar is. Met fysiek programmeren wordt programmeren zonder computer bedoeld. We hebben leuke opdrachten bedacht, bijvoorbeeld hoe ze elkaar fysiek als robot aan kunnen sturen. Dit helpt ze om de belangrijkste eerste stap te zetten, namelijk beseffen dat een computer alleen doet wat het verteld wordt om te doen. </p>
 
-                    <h4 class="nocaps" style="color:#18bc9c">Les 2-3: Hour of code met uitleg</h4><p>
+                    <h4 class="nocaps" style="color:#2c3e50">Les 2-3: Hour of code met uitleg</h4><p>
                     Hoewel Hour of code een vrij recht toe recht aan platform is, hebben de leerlingen er baat bij om de basis componenten van programmeren ook uitgelegd te krijgen. Ook is het belangrijk dat de kinderen weten waarom hun code wel (of juist niet) werkt. </p>
 
-                    <h4 class="nocaps" style="color:#18bc9c">Les 4-5: Introductie Scratch</h4><p>
+                    <h4 class="nocaps" style="color:#2c3e50">Les 4-5: Introductie Scratch</h4><p>
                     Scratch is een uiterst geschikte omgeving voor jong en oud om te leren programmeren, echter kan het ook overweldigend zijn in het begin. Daarom willen we de kinderen niet meteen in het diepe gooien, maar onder begeleiding kennis laten maken met Scratch en alle mogelijkheden daarvan.</p>
 
-                    <h4 class="nocaps" style="color:#18bc9c">
+                    <h4 class="nocaps" style="color:#2c3e50">
                     Les 6-12: Scratch project </h4><p>
                     Bij het project mogen de leerlingen zelf bedenken wat voor spel ze willen maken. Zowel bij het maken van hun keuze als het implementeren hiervan worden ze begeleid. Stapsgewijs gaan we ze leren waar ze allemaal rekening mee moeten houden bij het maken van hun spel en dus bij het uitvoeren van zo een project. Door grote problemen op te delen in kleine, oplosbare stukken kom je namelijk sneller bij je doel terecht.<br />
                     </p>
@@ -153,7 +183,9 @@
     </section>
 
 
-     <footer class="text-center">
+
+
+     <footer id="footer" class="text-center">
         <div class="footer-above">
             <div class="container">
             <div class="col-lg-12 text-center">
