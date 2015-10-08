@@ -37,7 +37,13 @@
       ga('send', 'pageview');
 
     </script>
-
+    // <script>
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // }); 
+    // </script>
     <script type="text/javascript">
               /**
      * @license
@@ -82,7 +88,17 @@
     <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
     nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
     <script type="text/javascript" src="nav.js"> </script>
-
+    <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="well bs-sidebar affix" id="sidebar">
+        <h4>CodeWeek</h4><hr style="border-color:#2c3e50;">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#top">Samengevat</a></li>
+            <li><a href="#codeweek">Inschrijven</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div> <!--well bs-sidebar affix-->
+      </div>
+ </nav>
     <header id="top">
         <div class="container">
             <div class="row">
@@ -259,7 +275,7 @@
 
     
 
-     <footer class="text-center">
+     <footer id="footer" class="text-center">
         <div class="footer-above">
             <div class="container">
             <div class="col-lg-12 text-center">

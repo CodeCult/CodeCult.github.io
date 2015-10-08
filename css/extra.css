@@ -112,3 +112,66 @@ h2 .small,
 	hyphens:auto;
 	word-wrap:break-word;
 }
+
+.bs-sidebar.affix {
+  display: none;
+  background-color:lightgrey;
+  padding: 0px;
+  padding-left: 7px;
+  padding-right: 2px;
+}
+
+.bs-sidebar.affix a {
+	color:#2c3e50;
+}
+
+@media (min-width: 768px) {
+  .bs-sidebar.affix {
+    /*width: 158px;*/
+    top: 91px;
+    left:0px;
+    right:auto;
+  }
+}
+
+.navbar-shrink .bs-sidebar.affix{
+	top:71px;
+}
+
+@media (min-width: 992px) {
+  .bs-sidebar.affix {
+    /*width: 213px;*/
+  }
+}
+
+@media (min-width: 1250px) {
+  .bs-sidebar.affix {
+  	display: inline;
+    /*width: 213px;*/
+  }
+}
+
+.bs-sidebar.affix>.nav>li>a:hover{
+	padding: 10px 10px;
+	background-color:darkgrey;
+}
+
+.bs-sidebar.affix>.nav>li>a{
+	padding: 10px 10px;
+}
+
+@media (min-width: 779px) {
+	#actualiteiten {
+		border: 5px solid lightgray; 
+		border-radius: 100px; 
+		background-color:lightgray
+	}
+}
+
+@media (max-width: 778px) {
+	#actualiteiten {
+		border: 5px solid lightgray; 
+		border-radius: 5px; 
+		background-color:lightgray
+	}
+}

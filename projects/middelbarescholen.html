@@ -35,6 +35,13 @@
       ga('send', 'pageview');
 
     </script>
+    // <script>
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // }); 
+    // </script>
 </head>
 
 <body id="page-top" class="index">
@@ -45,20 +52,32 @@
     <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
     nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
     <script type="text/javascript" src="nav.js"> </script>
-    
+    <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="well bs-sidebar affix" id="sidebar">
+        <h4>Wij verzorgen</h4><hr style="border-color:#2c3e50;">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#workshops">Workshops/<br>Cursussen</a></li>
+            <li><a href="#informatica">Informatica<br>Lessen</a></li>
+            <li><a href="#vmbo">VMBO<br>Programma's</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div> <!--well bs-sidebar affix-->
+    </nav>
     <header id="top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-10 col-lg-offset-1">
                     <img class="img-responsive" src="../img/icons/resources.png" width="200px" alt="">
                     <div class="intro-text">
                         <span class="name">Middelbare scholen</span>
                         <hr class="star-light">
                         <span class="skills">Op deze pagina leest u wat CodeCult voor middelbare scholen kan betekenen</span>
+                        <div class="col-lg-8 col-lg-offset-2">
                         <p>
                         Codecult geeft workshops en cursussen op scholen, maar kan ook helpen een nieuw informaticacurriculum op te zetten of een studiemiddag verzorgen waarbij u en uw collega’s kennis maken met de mogelijkheden van programmeren en informatica.
                         </p>
-                    </div>
+                    </div></div>
                 </div>
             </div>
         </div>
@@ -70,12 +89,12 @@
                 <div class="col-lg-12 text-center">
                     <h2>Workshops en cursussen</h2>
                     <hr class="star-primary">
-                    <h2><a href="#informatica"><i  class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#top"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h2><a href="#informatica"><i  class="fa fa-arrow-circle-down pull-right"></i></a></h2> -->
+                    <!-- <h2><a href="#top"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
                 </div>
                 </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-8 col-lg-offset-2">
                 <p>CodeCult kan verschillende workshops en cursussen aanbieden op uw school. Omdat we met eigen trainers werken, is ervaring met informatica van uw kant geen vereiste. We maken hierbij onderscheid tussen visuele programmeertalen en tekstgebaseerde programmeertalen.</p>
                 <p><em style="color:#18bc9c">Visuele programmeertalen</em> zijn dé manier om kinderen met programmeren in aanraking te brengen. Leerlingen hoeven niet alle commando’s uit hun hoofd uit te typen, maar plakken in de programmeeromgeving blokken aan elkaar. Hierdoor hoeven ze niet eerst de droge ‘grammatica’ van de taal te leren, maar kunnen ze al snel aan de slag met het maken van bijvoorbeeld een game. Omdat de leerlingen wel in aanraking komen met belangrijke programmeerconcepten, worden ze voorbereid op het werken in een tekstgebaseerde programmeertaal.</p>
                 <p><em style="color:#18bc9c">Tekstgebaseerde programmeertalen</em> zijn wat moeilijker te leren, maar bieden uiteindelijk meer mogelijkheden. Er zijn verschillende talen voor verschillende doeleinden: met HTML en CSS kunnen leerlingen bijvoorbeeld een website bouwen, met Python (een zeer gangbare programmeertaal) is vrijwel alles mogelijk. Omdat tekstuele programmeertalen moeilijker zijn om te leren, raden wij deze talen voor de basisschool af.</p>
@@ -95,12 +114,12 @@
             <div class="col-lg-12 text-center">
             <h2 class="toolarge">Opzetten van een<br/> informaticacurriculum </h2>
             <hr class="star-light">
-            <h2><a href="#vmbo"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-            <h2><a href="#workshops"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+            <!-- <h2><a href="#vmbo"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2> -->
+            <!-- <h2><a href="#workshops"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-8 col-lg-offset-2">
             <p>
             Naast het goed gebruiken van computerprogramma’s wordt kennis over hoe een computer werkt en hoe hij aangestuurd kan worden steeds belangrijker. Deze kennis kunnen leerlingen opdoen in informaticalessen. Wilt u structureel informatica aanbieden op school? Dan kan CodeCult u ondersteunen in het opzetten van het curriculum: wij hebben ervaring met het ontwikkelen van lessen en veel kennis van de huidige mogelijkheden. Of u een trainer van CodeCult in wil zetten of zelf de expertise in huis hebt voor het verzorgen van de lessen maakt niet uit, we helpen u graag met het opzetten van het informaticacurriculum op uw school!</p>
 
@@ -117,12 +136,12 @@
                 <div class="col-lg-12 text-center">
                     <h2>Vernieuwing VMBO</h2>
                     <hr class="star-primary">
-                    <h2><a href="#informatica"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2>
-                    <h2><a href="#top"><i class="fa fa-home pull-right"></i></a></h2>
+                    <!-- <h2><a href="#informatica"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
+                    <!-- <h2><a href="#top"><i class="fa fa-home pull-right"></i></a></h2> -->
                 </div>
                 </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+            <div class="col-lg-8 col-lg-offset-2">
                     <p>Vanaf het komend schooljaar wordt het VMBO ingrijpend vernieuwd. Naast een profiel waarmee leerlingen zich in ICT kunnen specialiseren (Media, Vormgeving en ICT) zijn ook in andere profielen door middel van keuzevakken ruime mogelijkheden gecre&euml;erd om ICT-vaardigheden te ontwikkelen. CodeCult is erg enthousiast over deze keuzevakken. Wij vinden het belangrijk dat leerlingen op school kunnen leren programmeren. Niet alleen omdat digitale geletterdheid steeds belangrijker wordt, maar ook omdat programmeren kinderen leert om probleemoplossend te denken en ruimte biedt voor creativiteit. <br />
                     CodeCult heeft veel ervaring met het ontwikkelen en geven van programmeerlessen en is goed op de hoogte van de technische en didactische mogelijkheden op dit gebied. Daarom gaat CodeCult vanaf komend schooljaar lesmateriaal aanbieden voor de volgende keuzevakken:</p>
                     <br>
@@ -152,7 +171,7 @@
 
 
 
-     <footer class="text-center">
+     <footer id="footer" class="text-center">
         <div class="footer-above">
             <div class="container">
             <div class="col-lg-12 text-center">
