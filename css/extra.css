@@ -179,3 +179,9 @@ h2 .small,
 		background-color:lightgray
 	}
 }
+
+@media (min-width: 979px) {
+	.dropdown:hover .dropdown-menu {
+	display: block;
+	}
+}
