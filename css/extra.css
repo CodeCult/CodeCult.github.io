@@ -215,7 +215,7 @@ h2 .small,
 }
 
 @media (max-width: 450px){
-	.fb-like{
+	#fblike{
 		display: none;
 	}
 }
