@@ -44,9 +44,9 @@ document.write("                          <ul class=\"dropdown-menu\" aria-label
 document.write("                            <li><a href=\"kinderen.html\">Kinderen en Jongeren<\/a><\/li>");
 document.write("                                <ul>");
 document.write("                                    <li><a href=\"kinderen.html#programmeerclub\">Programmeerclub<\/a><\/li>");
-document.write("                                    <li><a href=\"kinderen.html#codeherfst\">CodeHerfst<\/a><\/li>");
+// document.write("                                    <li><a href=\"kinderen.html#codeherfst\">CodeHerfst<\/a><\/li>");
 document.write("                                <\/ul>");
-document.write("                            <li><a href=\"codeweek.html\">Codeweek 2015<\/a><\/li>");
+document.write("                            <li><a href=\"volwassenen.html\">Volwassenen<\/a><\/li>");
 document.write("                            <!--<li><a href=\"volwassenen.html\">Volwassenen<\/a><\/li>-->");
 document.write("                            <li><a href=\"resources.html\">Tips voor zelfstudie<\/a><\/li>");
 document.write("                          <\/ul>");
