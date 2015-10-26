@@ -250,8 +250,13 @@
                             <li><a href="mailto:info@codecult.nl" target="_blank" class="btn-social btn-outline"><i class ="fa fa-fw fa-envelope"></i></a>
                             </li>
                         </ul>
-                        <div class="fb-like" data-href="http://www.facebook.com/codecult2014" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                        <script>
+                        if ($(window).width() > 450) {
+                            document.write("<div class=\"fb-like\" data-href=\"http:\/\/www.facebook.com\/codecult2014\" data-layout=\"standard\" data-action=\"like\" data-show-faces=\"true\" data-share=\"true\"><\/div>");
 
+                        }
+                        </script>
+<!--                         <div class="fb-like" data-href="http://www.facebook.com/codecult2014" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div> -->
 
                     </div>
                 </div>
