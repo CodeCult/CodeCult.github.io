@@ -185,3 +185,25 @@ h2 .small,
 	display: block;
 	}
 }
+
+@media (max-width: 400px) {
+	h1 {
+		font-size: 30px;
+	}
+}
+
+#indexheader{
+	padding-top:120px;
+}
+
+@media (max-width: 768px){
+	#indexheader{
+		padding-top: 80px;
+	}
+}
+
+@media (min-width: 992px){
+	#indexheader{
+		padding-top: 80px;
+	}
+}
