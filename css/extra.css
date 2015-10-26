@@ -180,9 +180,15 @@ h2 .small,
 	}
 }
 
-@media (min-width: 979px) {
+@media (min-width: 992px) {
 	.dropdown:hover .dropdown-menu {
 	display: block;
+	}
+	ul.nav li.dropdown:hover ul.dropdown-menu{
+	    display: block;    
+	}
+	.navbar .dropdown-menu {
+	 margin-top: 0px;
 	}
 }
 
