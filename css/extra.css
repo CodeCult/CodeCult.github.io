@@ -180,7 +180,7 @@ h2 .small,
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 767px) {
 	.dropdown:hover .dropdown-menu {
 	display: block;
 	}
@@ -191,6 +191,7 @@ h2 .small,
 	 margin-top: 0px;
 	}
 }
+
 
 @media (max-width: 400px) {
 	h1 {
