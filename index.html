@@ -480,8 +480,12 @@
     </div>
 
 
-
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>if (typeof jQuery === 'undefined') {
+      document.write(unescape("%3Cscript src='js/jquery-1.11.3.js' %3E%3C/script%3E"));
+    }
+    </script>
+    <!-- // <script src="js/jquery-1.10.2.js"></script> -->
     <script async src="js/bootstrap.min.js"></script>
     <script async src="js/smoothscroll.js"></script>
     <script async src="js/jquery.easing.js"></script>
