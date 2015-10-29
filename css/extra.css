@@ -148,7 +148,7 @@ h2 .small,
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1279px) {
   .bs-sidebar.affix {
   	display: inline;
     /*width: 213px;*/

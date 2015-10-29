@@ -79,6 +79,22 @@
 
         </script>
 
+        <script>
+        function resetForm($form) {
+          setTimeout( function() {
+            $form.find('input:text, input:password, input:file, select, textarea').val('');
+            $form.find('input:radio, input:checkbox')
+                 .removeAttr('checked').removeAttr('selected');
+               } , 2000);
+        }
+        </script>
+
+        <script>
+        function reactie() {
+          document.getElementById("verzonden").innerHTML= "Bedankt, je inschrijving is geregistreerd! Wij zullen spoedig contact met je opnemen.";
+        } 
+        </script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -167,9 +183,9 @@
             <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <h3 class="center">inschrijven? <br>Vul dan direct het formulier in!</h3>
-				<p><strong>NB:</strong> Het is belangrijk dat uw kind een laptop meeneemt van huis.</p>
+				<p><strong>NB:</strong> Het is belangrijk dat uw kind een laptop meeneemt van huis. Vragen? Bel 020-7051000.</p>
                 <div class="ss-required-asterisk" aria-hidden="true">*Verplicht veld</div>
-                <div class="ss-form"><form action="https://docs.google.com/forms/d/1sJvrw76QMmQJ6xxOpgBXtXL-VDuyBhw_zoPDQlicTjA/formResponse?embedded=true" method="POST" id="ss-form" target="_blank" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+                <div class="ss-form"><form name="kidclub" action="https://docs.google.com/forms/d/1sJvrw76QMmQJ6xxOpgBXtXL-VDuyBhw_zoPDQlicTjA/formResponse?embedded=true" method="POST" id="ss-formclub" target="_blank" onsubmit="reactie()"><ol role="list" class="ss-question-list" style="padding-left: 0">
                 <div class="ss-form-question errorbox-good" role="listitem">
                 <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
                 <label class="ss-q-item-label" for="entry_1409128788"><div class="ss-q-title">Volledige naam
@@ -250,9 +266,13 @@
                 <input type="hidden" name="fbzx" value="-698762801524606092">
 
                 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                <input type="submit" name="submit" value="Verstuur" id="ss-submit" class="jfk-button jfk-button-action ">
+                <input type="submit" name="submit" value="Verstuur" id="ss-submit" class="jfk-button jfk-button-action" onclick="resetForm($('#ss-formclub'));">
                 </td>
-                </tr></tbody></table></div></ol></form></div>
+                </tr></tbody></table></div></ol></form>
+
+                </div>
+                <p id="verzonden"></p>
+
             </div>
             </div>
             </div>
