@@ -36,6 +36,12 @@
       ga('send', 'pageview');
 
     </script>
+
+    <script src="../js/head.core.min.js"></script>
+    <script>
+        head.load("../js/jquery-1.10.2.js", "../js/bootstrap.min.js", "../js/smoothscroll.js", "../js/jquery.easing.js", "../js/classie.js", "../js/cbpAnimatedHeader.js", "../js/freelancer.js", "../js/dropdownhover.js");
+    </script>
+
     <style>
     h4{
         color:#18bc9c;
@@ -139,12 +145,46 @@
                 <h4 class="nocaps">Nieuwsbrief</h4>
                 <p>Vanaf september 2015 wordt onze nieuwsbrief maandelijks verstuurd naar alle belangstellenden. Hierin worden niet alleen onze aankomende workshops vermeld, maar ook relevant nieuws uit de ICT-wereld.</p>
 
+                
 
             </div>
             </div>
         </div>
     </section>
     
+
+    <section class="success" id="laptops">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="nocaps">Laptops gezocht!</h3>
+                <p>Eén of meerdere laptops over? Laat hier uw e-mail adres achter, dan nemen wij contact op.</p>
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframeDown" style="display:none;" onload="if(submitted) {formSubmit('form')}"></iframe>
+                <form name ="emailform" action="https://docs.google.com/a/perceptum.nl/forms/d/1yXkU83WI9GCS_H4SqlrxsswxVIsvFbwjT16B4X4U5nU/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
+                    <div role="list">
+                        <div class="ss-form-question errorbox-good" role="listitem">
+                            <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
+                                <div class="ss-form-entry">
+                                    <label aria-hidden="true" class="ss-q-item-label" for="entry_1451409683">
+                                        <div class="ss-q-title">E-mail:
+                                            <label for="itemView.getDomIdToLabel()" aria-label="(Verplicht veld)"></label>
+                                        </div>
+                                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                                    </label>
+                                    <input type="text" name="entry.1451409683" placeholder="ik@voorbeeld.nl" class="ss-q-short" id="entry_1451409683" dir="auto" aria-label="E-mail  " aria-required="true" required="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="draftResponse" value="[,,&quot;4740690374170904168&quot;]">
+                        <input type="hidden" name="pageHistory" value="0">
+                        <input type="hidden" name="fromEmail" value="false">
+                        <input type="hidden" name="fbzx" value="4740690374170904168">
+                        <span id="form"><input type="submit" name="submit" value="Verzenden" id="ss-submit"></span>
+                    </div>
+                </form>
+
+    </section>
     
      <footer id="footer" class="text-center">
         <div class="footer-above">
@@ -191,13 +231,63 @@
         </a>
     </div>
 
-   <script src="../js/jquery-1.10.2.js"></script> 
-    <script async src="../js/bootstrap.min.js"></script>
-    <script async src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script async src="../js/classie.js"></script>
-    <script async src="../js/cbpAnimatedHeader.js"></script>
-    <script async src="../js/freelancer.js"></script>
-    <script async src="../js/smoothscroll.js"></script>
+<!--    // <script src="../js/jquery-1.10.2.js"></script> 
+   //  <script async src="../js/bootstrap.min.js"></script>
+   //  <script async src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+   //  <script async src="../js/classie.js"></script>
+   //  <script async src="../js/cbpAnimatedHeader.js"></script>
+   //  <script async src="../js/freelancer.js"></script>
+   //  <script async src="../js/smoothscroll.js"></script> -->
+
+    <script type="text/javascript">
+        /**
+        * Removes previous feedback message and posts a new one
+        * Also provides basic frontend e-mail validation
+        **/
+        function formSubmit(flag){
+            var confirm = document.getElementById('confirm');
+            var wrong = document.getElementById('wrong');
+            
+            // Remove old feedback, if it is present.
+            if(confirm) {
+                confirm.parentNode.removeChild(confirm);
+            }
+            if(wrong) {
+                wrong.parentNode.removeChild(wrong);
+            }
+
+            // Create HTML to append to div
+            var text = "<div id='confirm' style='color:black;'>Je reactie is ontvangen!</div>";
+            var errorText = "<div id='wrong' style='color:red'>Sorry, dat lijkt niet op een e-mailadres!</div>"
+            
+            // Get user's emailaddress
+            var userInput = document.forms['emailform']['entry.1451409683'].value;
+
+            // using http://www.w3schools.com/js/js_form_validation.asp
+            var posAt = userInput.indexOf("@");
+            var posDot = userInput.lastIndexOf(".");
+
+            /**
+            * Check if:
+            * - @ is not first character
+            * - There are at least two characters between @ and the last dot
+            * - There are at least two characters following the last dot 
+            * If userInput fails one of these, an error is appended
+            * If userInput passes all of them, a confirmation is appended
+            **/
+            if(posAt < 1 || posDot < posAt+2 || posDot+2 > userInput.length) {
+                var div = document.getElementById(flag);
+                div.innerHTML = div.innerHTML + errorText;
+                return false;
+            }
+            else {
+                var div = document.getElementById(flag);
+                div.innerHTML = div.innerHTML + text;
+                return true;
+            }
+            
+        }
+    </script>
 
 </body>
 
