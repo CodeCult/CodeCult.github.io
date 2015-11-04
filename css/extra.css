@@ -188,7 +188,7 @@ h2 .small,
 }
 
 #indexheader{
-	padding-top:120px;
+	padding-top:150px;
 }
 
 @media (max-width: 768px){
@@ -199,7 +199,7 @@ h2 .small,
 
 @media (min-width: 992px){
 	#indexheader{
-		padding-top: 80px;
+		padding-top: 90px;
 	}
 }
 
