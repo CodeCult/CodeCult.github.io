@@ -1,34 +1,540 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="programmeren, codecult, codeherfst, summerschool, leren, kinderen, volwassenen, begeleiding, scholen, scratch, html, css, oefenen, hulp">
+    <meta name="description" content="Kinderen en volwassenen kunnen nu leren programmeren bij CodeCult! Voor individuen, scholen en bedrijven, kijk hier! Workshops voor alle leeftijden.">
+    <meta name="author" content="CodeCult">
+    <meta name="keywords" content="leren, programmeren, programmeerles, programmeerworkshop, codecult, leren, kinderen, volwassenen, scholen, scratch, html, css, workshop, workshops, scratchles">
 
-    <title>CodeCult</title>
+    <meta property="og:url" content="http://www.codecult.nl/" />
+    <meta property="og:title" content="CodeCult - Leren programmeren: voor kinderen, volwassenen en scholen" />
+    <meta property="og:description" content="Kinderen en volwassenen kunnen nu leren programmeren bij CodeCult! Voor individuen, scholen en bedrijven, kijk hier! Workshops voor alle leeftijden." />
+    <meta property="og:image" content="http://www.codecult.nl/img/logo_big.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CodeCult - Leren programmeren: voor kinderen, volwassenen en scholen" />
+    <meta property='og:locale' content='nl_nl'/>
 
-    <!-- Bootstrap Core CSS -->
+    <title>CodeCult - Leren programmeren: voor kinderen, volwassenen en scholen</title>
+
+    <!-- Bootstrap Core CSS + all css that don't need to be changed: freelancer, montserrat,lato -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/freelancer.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom Css -->
+        <!-- Custom Css -->
     <link href="css/extra.css" rel="stylesheet" type="text/css">
     
     <link rel="shortcut icon" type="image/png" href="img/codecult_logo_small.png"/>
+
+<!--     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+ -->
+    <!-- Fonts -->
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+<!--     <link href='css/Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='css/Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+ -->
+
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68120299-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script src="js/head.core.min.js"></script>
+    <script>
+        head.load("js/jquery-1.10.2.js", "js/bootstrap.min.js", "js/smoothscroll.js", "js/jquery.easing.js", "js/classie.js", "js/cbpAnimatedHeader.js", "js/freelancer.js", "js/dropdownhover.js");
+    </script>
+</head>
+
+
+	
+
+    <!-- Navigation -->
+    <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
+    nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CodeCult</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Voor scholen
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="projects/basisschool.html">Basisscholen</a></li>
+                            <li><a href="projects/middelbarescholen.html">Middelbare Scholen</a>
+                            <ul> 
+                            <li><a href="projects/middelbarescholen.html#workshops">Algemeen</a></li>
+                            <li><a href="projects/middelbarescholen.html#vmbo">Vernieuwing VMBO</a></li>
+                            </ul>
+                            </li>
+
+                          </ul>
+                        </div>
+                    </li>
+                  <li class="page-scroll">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Voor jou
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="projects/kinderen.html">Kinderen en Jongeren</a></li>
+                                <ul>
+                                    <li><a href="projects/kinderen.html#kerst">Kerstactiviteit</a></li>
+                                    <li><a href="projects/kinderen.html#programmeerclub">Programmeerclub</a></li>
+                                    <!-- <li><a href="projects/kinderen.html#codeherfst">CodeHerfst</a></li> -->
+                                </ul>
+                            <li><a href="projects/volwassenen.html">Volwassenen</a></li>
+                                <!-- <li><a href="projects/codeweek.html">Codeweek 2015</a></li> -->
+                            <!--<li><a href="projects/volwassenen.html">Volwassenen</a></li>-->
+                            <li><a href="projects/resources.html">Tips voor zelfstudie</a></li>
+                          </ul>
+                        </div>
+                    </li>
+
+
+      
+                  <li class="page-scroll">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Over Ons
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="projects/over.html">Over CodeCult</a></li>
+                                    <li><a href="projects/over.html#trainers1">Het Team</a></li>
+                            
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="page-scroll">
+                            <li><a href="projects/sponsoring.html" class="btn btn-md" style="padding-top:0; padding-bottom:0; margin:5px; padding:10px 15px; display:flex;" type="button" id="dropdownMenu1" >Sponsoren</a></li>
+
+                    </li>
+                    
+                    
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        <!-- /.container-fluid -->
+        
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <div class="well bs-sidebar affix" id="sidebar">
+            <h4>Leer<br>coden</h4><hr style="border-color:#2c3e50;">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#top" class="active">Home</a></li>
+                <li><a href="#geschiedenis">Waarom?</a></li>
+                <li><a href="#portfolio">Hoe?</a></li>
+                <li><a href="#about">Met wie?</a></li>
+                <li><a href="#nieuwsbrief">Nieuwsbrief</a></li>
+                <li><a href="#comments">Reageer</a></li>
+                <li><a href="#footer">Contact</a></li>
+              </ul>
+            </div> <!--well bs-sidebar affix-->
+          </div>
+    </nav>
+    
+<body class="index">
+
+
+
+    <header id="top">
+        <div class="container" id="indexheader" >
+   
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <img class="img-responsive" src="img/logo_big.png" alt="codecult" width="170px"> -->
+
+                    <img width="170" height="170" title="codecult logo" alt="leren programmeren" src="img/logo_big.png">
+                    <h1 class="nocaps">Leren programmeren</h1>
+
+                    <div class="intro-text">
+                        <!--<span class="name">Code Cult</span>
+                        <hr class="star-light">-->
+                        <span class="skills">Welkom bij <span class="emphasis">CodeCult:</span> Een initiatief van <span class="emphasis">coders</span> voor <span class="emphasis">coders.</span> </span>
+                        <p class="skills">Wil jij leren <span class="emphasis">programmeren?</span> Dan ben je aan het juiste adres!</p>
+                        <div class="row" > <!--#2c3e50-->
+
+                        <div class="col-lg-10 col-lg-offset-1" id="actualiteiten">
+                        <h3 style="color:#2c3e50">Actuele activiteiten</h3><hr>
+                        <div class="col-lg-6 ">
+                        <p style="color:#2c3e50">Wil jij het hele jaar door programmeren? Join the club op IJburg in Amsterdam!</p><a href="projects/kinderen.html#programmeerclub"><button type="button" class="btn btn-lg btn-md btn-default">Programmeerclub</button></a><br><br>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <p style="color:#2c3e50">Leer moderne, leuke kerstkaarten programmeren in de kerstvakantie!</p>
+                            <a href="projects/kinderen.html#kerst"><button type="button" class="btn btn-lg btn-md btn-default">Kerst met CodeCult</button></a><br><br>
+                       </div>
+                       </div>
+                        </div>
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/codecult2014" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/communities/102716087425361188212" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/codecult" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li><a href="mailto:info@codecult.nl" target="_blank" class="btn-social btn-outline"><i class ="fa fa-fw fa-envelope"></i></a>
+                            </li>
+                        </ul>
+
+                            <div class="fb-like" id="fblike" data-href="https://www.facebook.com/codecult2014" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+        <section id="geschiedenis">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="container">
+                            <h1>Waarom leren programmeren?</h1>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bs-example col-lg-10 col-lg-offset-1 text-center center">
+                    <div id="myCarousel" class="carousel slide" data-interval="3900" data-ride="carousel" >
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol> 
+                        
+                       <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <img src="./img/history/20140624_112420.jpg" class="img-responsive" alt="Bouwen aan je toekomst"/>
+                                <div class="carousel-caption" style="background: rgba(200, 200, 200, 0.5);">
+                                  <h3>Bouwen aan je toekomst</h3>
+                                  <h4>"Programmeren is de toekomst: goed voor hun kennis en creativiteit."</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./img/history/samen.jpg" class="img-responsive" alt="Samenwerken" />
+                                <div class="carousel-caption" style="background: rgba(200, 200, 200, 0.5);">
+                                    <h3>Samenwerken</h3>
+                                    <h4>"Hier leren kinderen samenwerken met anderen."</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                 <img src="./img/history/vergroot.jpg" class="img-responsive" alt="vaardigheden vergroten" />
+                                <div class="carousel-caption" style="background: rgba(200, 200, 200, 0.5);">
+                                  <h3>Vaardigheden vergroten</h3>    
+                                    <h4>"Programmeren vergroot de vaardigheden waar ze later profijt van hebben."</h4> 
+                                </div>
+                            </div>
+                            <div class="item">
+                                 <img src="./img/history/helpen.jpg" class="img-responsive" alt="Dromen realiseren" />
+                                <div class="carousel-caption" style="background: rgba(200, 200, 200, 0.5);">
+                                  <h3>Dromen realiseren</h3>
+                                  <h4>"Mijn dochter wil zelf een app bouwen, ik kan haar zelf daarbij helaas niet helpen."</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    <section class="success" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Wat wil je leren programmeren?</h1>
+                    <hr class="star-light">
+
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-4 four center-block">
+
+                    <img src="img/icons/games.png" class="img-responsive small" alt="games"/>
+                    <p class="type_text">Leer de de basis waarmee jij jouw droom-game werkelijkheid kunt maken!</p>
+                </div>
+                <div class="col-md-4 four center-block">
+
+                <img src="img/icons/sites.png" class="img-responsive small" alt="websites" />    
+                <p class="type_text">Leer zelf een website bouwen.</p>    
+                </div>
+                <div class="col-md-4 four center-block">
+
+                <img src="img/icons/apps.png" class="img-responsive small" alt="apps" />
+                <p class="type_text">Zijn er bepaalde apps die jij mist op je telefoon? Maak ze zelf!</p>    
+                </div>
+   
+            </div>
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-6" >
+                    <div class="center-block">
+                        <h3 class="nocaps center"> Wij kunnen jou </h3>
+                        <a href="projects/kinderen.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong> Leren programmeren</strong></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="center-block">
+                        <h3 class="nocaps center">Of jij kan het</h3>
+                        <a href="projects/resources.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong>Zelf proberen</strong></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+    <section  id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Leren programmeren bij CodeCult</h1>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row col-md-offset-1">
+                <div class="col-md-3">
+                <img class="img-responsive" src="img/overons/summerschool.jpg" alt="summerschool"> </div>
+                <div class="col-md-7">
+                    <p>
+                        CodeCult organiseert workshops waarin deelnemers niet alleen leren programmeren, maar ook meer begrip ontwikkelen voor technologie. Hierbij hoort niet alleen het gebruik van dagelijkse artikelen zoals laptops en telefoons, maar ook de geschiedenis van computerwetenschappen. <br>
+                        Omdat we bij CodeCult vinden we dat <em>iedereen</em> moet kunnen leren programmeren, doen we ons uiterste best om het voor <em>iedereen</em> mogelijk te maken.</p>
+                    <p>
+                        <em>Leren door Creëren</em> staat bij CodeCult centraal. Programmeren is naast een leerzame, ook een leuke bezigheid. Door de creativiteit van onze leerlingen te prikkelen, zorgen we er voor dat ze gemotiveerd en enthousiast blijven.
+                    </p>
+                </div>
+                </div>
+                <br>
+                <div class="row col-md-offset-1">
+                <div class="col-md-7">
+                    <p>
+                        Bij ons leren de kinderen:
+                        <ul>
+                            <li><p>Projectgericht werken</p></li>
+                            <li><p>Zelfstandig problemen oplossen</p></li>
+                            <li><p>De juiste vragen stellen</p></li>
+                            <li><p>Alledaagse technologie beter begrijpen</p></li>
+                            <li><p>Samenwerken en elkaar helpen</p></li>
+                        </ul>
+                    </p>
+                    </div>
+                    <div class="col-md-4">
+                    <img class="img-responsive" src="img/overons/regulieronderwijs.jpg" alt="summerschool"> </div>
+                </div>
+                <br>
+                <div class="col-md-9 col-md-offset-1">
+                        <p>
+                            Om scholen te ondersteunen om zelf programmeerles aan te kunnen bieden is CodeCult begonnen aan het bouwen van een platform dat ook door docenten zonder programmeerkennis gebruikt kan worden. Meer informatie? Bel ons op 020 705 1000 of stuur een e-mail naar <a class="mailer" href="mailto:info@codecult.nl" target="_blank" style="color:#18bc9c">info@codecult.nl</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="success" id="nieuwsbrief">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Blijf op de hoogte</h1>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p>Programmeren is een <em class="emphasis"> sport </em class="emphasis"> en je leert het beste als je het <em class="emphasis">samen</em class="emphasis"> doet.</p> 
+            <p><b>Schrijf je nu in voor onze nieuwsbrief!</b><p>
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframeDown" style="display:none;" onload="if(submitted) {formSubmit('form')}"></iframe>
+                <form name ="emailform" action="https://docs.google.com/a/perceptum.nl/forms/d/11UB1z2JayydEu9qy-8rjQMNs6JRn76t-L4ZZWj8oADA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
+                    <div role="list">
+                        <div class="ss-form-question errorbox-good" role="listitem">
+                            <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
+                                <div class="ss-form-entry">
+                                    <label aria-hidden="true" class="ss-q-item-label" for="entry_1057991613">
+                                        <div class="ss-q-title">E-mail:
+                                            <label for="itemView.getDomIdToLabel()" aria-label="(Verplicht veld)"></label>
+                                        </div>
+                                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                                    </label>
+                                    <input type="text" name="entry.1057991613" placeholder="ik@voorbeeld.nl" class="ss-q-short" id="entry_1057991613" dir="auto" aria-label="E-mail  " aria-required="true" required="" title="">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="draftResponse" value="[,,&quot;1836563596584766178&quot;]">
+                        <input type="hidden" name="pageHistory" value="0">
+                        <input type="hidden" name="fromEmail" value="false">
+                        <input type="hidden" name="fbzx" value="1836563596584766178">
+                        <span id="form"><button class="btn btn-primary" type="submit" name="submit" value="Verzenden" id="ss-submit">Verzenden</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section id="comments">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h1>Laat een berichtje achter!</h1>
+              <hr class="star-primary">
+          </div>
+      </div>
+<!-- This is the actual comments section -->
+<div class="col-lg-10 col-lg-offset-1" id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'codecult'; // required: replace example with your forum shortname
+                        var disqus_identifier = '{{ page.url }}';
+                var disqus_url = 'http://www.codecult.nl{{ page.url }}';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</section>
+
+
+    <footer class="text-center" id="footer">
+        <div class="footer-above">
+            <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2>Verdere vragen?</h2>
+            </div>
+                 <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>E-mail ons:</h3>
+                        <p><a class="mailer" href="mailto:info@codecult.nl" target="_blank">info@codecult.nl</a></p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Bel ons:</h3>
+                        <p><i class="fa fa-phone"></i>020 705 1000</p>
+                   </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Volg ons online:</h3>
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/codecult2014" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/communities/102716087425361188212" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="https://www.twitter.com/codecult" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Adres: Science Park 402, 1098 XH Amsterdam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+
+
+    <!-- // <script src="js/dropdownhover.js"></script> -->
+
+
+   
+
+
+<!-- fb script -->
+    <script>!function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||(o=e.createElement(n),o.id=t,o.src="//connect.facebook.net/nl_BE/sdk.js#xfbml=1&version=v2.5",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");</script>
+
+    <!-- DISQUS SCRIPT -->
+    <!-- Put this just before the closing body tag of your web page -->
+    <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'codecult'; // required: replace example with your forum shortname
+                    var disqus_identifier = '{{ page.url }}';
+            var disqus_url = 'http://www.codecult.nl{{ page.url }}';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+    </script>
+
+    <script>
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // }); 
+    // </script>
+
     <script type="text/javascript">
         /**
         * Removes previous feedback message and posts a new one
@@ -79,552 +585,24 @@
         }
     </script>
 
-</head>
 
-<body class="index">
-
-    <!-- Navigation -->
-    <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
-    nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
-<nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">CodeCult</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Voor scholen
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/basisschool.html">Basisscholen</a></li>
-                            <!--<li><a href="projects/middelbarescholen.html">Middelbare scholen</a></li>-->
-                          </ul>
-                        </div>
-                    </li>
-                  <li class="page-scroll">
-                        <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Voor particulieren
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/kinderen.html">Kinderen</a></li>
-                            <!--<li><a href="projects/volwassenen.html">Volwassenen</a></li>-->
-                            <li><a href="projects/resources.html">Tips voor zelfstudie</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="page-scroll">
-                       <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Voor bedrijven
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/sponsoring.html">Help CodeCult</a></li>
-                          </ul>
-                        </div>
-                    </li>
-
-                    <!-- Ik heb hier dropdowns van gemaakt omdat dat een snelle manier was om de layout consistent te houden...maar het is niet echt nodig qua inhoud-->
-                   <li class="page-scroll">
-
-                          <button class="btn btn-default" type="button" id="dropdownMenu1" >
-                                <li><a href="projects/codeherfst.html">CodeHerfst</a></li>
-                          </button>
-
-                            <!-- <li><a href="projects/codeherfst.html">CodeHerfst</a></li> -->
-                    </li>
-                    
-                    <li class="page-scroll">
-<!--                         <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Ons team
-                            <span class="caret"></span>
-                          </button>
-
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/trainers.html#Eszter">Eszter Fodor, <span style="text-transform:none">BSc</span></a></li>
-                            <li><a href="projects/trainers.html#Elise">Elise van der Pol, <span style="text-transform:none">BSc</span></a></li>
-                            <li><a href="projects/trainers.html#Erika">Erika Schlatter, <span style="text-transform:none">BSc</span></a></li>
-                            <li><a href="projects/trainers.html#Timo">Timo Mulder, <span style="text-transform:none">BSc</span></a></li>
-                          </ul>
-                        </div>                        
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-        
+    <!--     // <script async src="js/jquery-1.10.2.js"></script>
+    // <script async src="js/bootstrap.min.js"></script>
+    // <script async src="js/smoothscroll.js"></script>
+    // <script async src="js/jquery.easing.js"></script>
+    // <script async src="js/classie.js"></script>
+    // <script async src="js/cbpAnimatedHeader.js"></script>
+    // <script async src="js/freelancer.js"></script>
 
 
-    </nav>
-    
 
-    <header>
-        <div class="container" style="padding-top:120px">
-        <div class="row">
-            <div class="col-md-7">
-            </div>
-            <div class="col-md-1">
-                <img class="img-responsive" src="img/icons/pijl.png" style="max-width:400px; margin:auto; align:right">
-            </div>
-        </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/logo_big.png" alt="">
-                    <div class="intro-text">
-                        <!--<span class="name">Code Cult</span>
-                        <hr class="star-light">-->
-                        <span class="skills">Welkom bij <span class="emphasis">CodeCult:</span> Een initiatief van <span class="emphasis">coders</span> voor <span class="emphasis">coders.</span> </span>
-                        <p class="skills">Wil jij leren <span class="emphasis">programmeren?</span> Dan ben je aan het juiste adres!</p>
-                        <h3><a href="#nieuwsbrief"> Join the movement! </a> </h3>
-                        <ul class="list-inline">
-                            <li><a href="https://www.facebook.com/codecult2014" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://plus.google.com/communities/102716087425361188212" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com/codecult" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li><a href="mailto:info@codecult.nl" target="_blank" class="btn-social btn-outline"><i class ="fa fa-fw fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-        <section id="geschiedenis">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="container">
-                            <h2>Wat zeggen ouders?</h2>
-                            <hr class="star-primary">
-
-                            
-                        </div>
-                    </div>
-                </div>
-                <center>
-                <div class="bs-example">
-                    <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel" style="max-width:1000px;">
-                        <!-- Carousel indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                        </ol> 
-                        
-                       <!-- Carousel items -->
-                        <div class="carousel-inner">
-                            <div class="active item">
-                                <img src="./img/history/20140624_112420.jpg" class="img-responsive" alt="Bouwen aan je toekomst"/>
-                                <div class="carousel-caption" style="-webkit-text-stroke: 1px black; background: rgba(200, 200, 200, 0.5);">
-                                  <h2>Bouwen aan je toekomst</h2>
-                                  <h4>"Programmeren is de toekomst: goed voor hun kennis en creativiteit."</h4>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="./img/history/samen.jpg" class="img-responsive" alt="Samenwerken" />
-                                <div class="carousel-caption" style="-webkit-text-stroke: 1px black; background: rgba(200, 200, 200, 0.5);">
-                                    <h2>Samenwerken</h2>
-                                    <h4>"Hier leren kinderen samenwerken met anderen."</h4>
-                                </div>
-                            </div>
-                            <div class="item">
-                                 <img src="./img/history/vergroot.jpg" class="img-responsive" alt="vaardigheden vergroten" />
-                                <div class="carousel-caption" style="-webkit-text-stroke: 1px black; background: rgba(200, 200, 200, 0.5);">
-                                  <h2>Vaardigheden vergroten</h2>    
-                                    <h4>"Programmeren vergroot de vaardigheden waar ze later profijt van hebben."</h4> 
-                                </div>
-                            </div>
-                            <div class="item">
-                                 <img src="./img/history/helpen.jpg" class="img-responsive" alt="Dromen realiseren" />
-                                <div class="carousel-caption" style="-webkit-text-stroke: 1px black; background: rgba(200, 200, 200, 0.5);">
-                                  <h2>Dromen realiseren</h2>
-                                  <h4>"Mijn dochter wil zelf een app bouwen, ik kan haar zelf daarbij helaas niet helpen."</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Carousel nav 
-                        <a class="carousel-control left" href="#myCarousel" data-slide="#prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="carousel-control right" href="#myCarousel" data-slide="#next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>-->
-                    </div>
-                </div>
-                </center>
-
-            </div>
-        </section>
-
-
-    <section class="success" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Wat voor programmeur wil je zijn?</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 four center-block">
-                    <!--<a href="#games" class="portfolio-link" data-toggle="modal">
-                        <div class="caption small-caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>-->
-                    <img src="img/icons/games.png" class="img-responsive small" alt=""/>
-                    <p class="type_text">Leer de de basis waarmee jij jouw droom-game werkelijkheid kunt maken!</p>
-                </div>
-                <div class="col-md-4 four center-block">
-                    <!--<a href="#sites" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>                        
-                    </a>-->
-                <img src="img/icons/sites.png" class="img-responsive small" alt="" />    
-                <p class="type_text">Leer zelf een website bouwen.</p>    
-                </div>
-                <div class="col-md-4 four center-block">
-                    <!--<a href="#apps" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>-->
-                <img src="img/icons/apps.png" class="img-responsive small" alt="" />
-                <p class="type_text">Zijn er bepaalde apps die jij mist op je telefoon? Maak ze zelf!</p>    
-                </div>
-                <!--<div class="col-md-4 four center-block">
-                    <a href="#robots" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div> 
-                    </a>
-                <img src="img/icons/robots.png" class="img-responsive small" alt="" />
-                <p class="type_text">Altijd al je eigen robot willen programmeren?</p>
-                </div>-->
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-6" >
-                    <div class="center-block">
-                        <h2 class="nocaps center"> Wij kunnen jou </h2>
-                        <a href="projects/kinderen.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong> Leren programmeren</strong></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="center-block">
-                        <h2 class="nocaps center">Of jij kan het</h2>
-                        <a href="projects/resources.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong>Zelf proberen</strong></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section  id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Over Ons</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row col-md-offset-1">
-                <div class="col-md-2">
-                <img class="img-responsive" src="img/overons/summerschool.jpg" alt="summerschool"> </div>
-                <div class="col-md-7">
-                    <p>
-                        CodeCult organiseert workshops om programmeerkennis over te dragen. Momenteel zijn deze alleen voor kinderen beschikbaar (van 9 t/m 14 jaar), maar in de toekomst gaan we de programmeerworkshops ook aan volwassenen beschikbaar stellen. 
-                    </p>
-                </div>
-                </div>
-                <br>
-                <div class="row col-md-offset-1">
-                <div class="col-md-6">
-                    <p>
-                        Workshops worden niet alleen gegeven aan particulieren, in de vorm van bijvoorbeeld CodeSchools (een week waarin deelnemers elke dag een workshop bijwonen), maar ook als onderdeel van het reguliere onderwijs. Hiermee maakt CodeCult programmeren voor iedereen toegankelijk. 
-                    </p>
-                    </div>
-                    <div class="col-md-3">
-                    <img class="img-responsive" src="img/overons/regulieronderwijs.jpg" alt="summerschool"> </div>
-                </div>
-                <br>
-                <div class="col-md-9 col-md-offset-1">
-                        <p>
-                            Op dit moment verzorgen wij zelf de workshops. Om scholen te ondersteunen om zelf programmeerles aan te kunnen bieden is CodeCult begonnen aan het bouwen van een platform dat ook door docenten zonder programmeerkennis gebruikt kan worden. Meer informatie? Bel ons op 020 705 1000 of stuur een e-mail naar <a class="mailer" href="mailto:info@codecult.nl" target="_blank" style="color:#18bc9c">info@codecult.nl</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="success" id="nieuwsbrief">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Blijf op de hoogte</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-            <p>Programmeren is een <em class="emphasis"> sport </em class="emphasis"> en je leert het beste als je het <em class="emphasis">samen</em class="emphasis"> doet.</p> 
-            <p><b>Schrijf je nu in voor onze nieuwsbrief!</b><p>
-                <script type="text/javascript">var submitted=false;</script>
-                <iframe name="hidden_iframe" id="hidden_iframeDown" style="display:none;" onload="if(submitted) {formSubmit('form')}"></iframe>
-                <form name ="emailform" action="https://docs.google.com/a/perceptum.nl/forms/d/11UB1z2JayydEu9qy-8rjQMNs6JRn76t-L4ZZWj8oADA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
-                    <div role="list">
-                        <div class="ss-form-question errorbox-good" role="listitem">
-                            <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
-                                <div class="ss-form-entry">
-                                    <label aria-hidden="true" class="ss-q-item-label" for="entry_1057991613">
-                                        <div class="ss-q-title">E-mail:
-                                            <label for="itemView.getDomIdToLabel()" aria-label="(Verplicht veld)"></label>
-                                        </div>
-                                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-                                    </label>
-                                    <input type="text" name="entry.1057991613" placeholder="ik@voorbeeld.nl" class="ss-q-short" id="entry_1057991613" dir="auto" aria-label="E-mail  " aria-required="true" required="" title="">
-                                </div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="draftResponse" value="[,,&quot;1836563596584766178&quot;]">
-                        <input type="hidden" name="pageHistory" value="0">
-                        <input type="hidden" name="fromEmail" value="false">
-                        <input type="hidden" name="fbzx" value="1836563596584766178">
-                        <span id="form"><input type="submit" name="submit" value="Verzenden" id="ss-submit"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-  </section>
-
-    <!--<section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Wie wij zijn</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p>Wij hebben leren programmeren in een tijd waarin er nog geen internet was. Dit betekende dat je alleen kon leren programmeren als je gesteund werd door anderen in je omgeving. Wij willen deze ervaring terugbrengen en ervoor zorgen dat de kansen die wij gekregen hebben voor iedereen beschikbaar zijn.</p>
-                </div>
-  
-  
-		<div class="col-lg-4 col-lg-offset-2 text-center">
-			<img class="img-circle" src="img/people/elisefix.gif" height="90" width="90">
-			<h4 class="normal">Elise van der Pol</h4>
-			<h5 class="normal"><i>Python, Javascript, Java</i></h5>
-			<ul class="list-inline">
-			<li><a href="https://www.twitter.com/ElisevanderPol" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a></li>
-			<li><a href="mailto:elise@perceptum.nl" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
-			</ul>
-               </div>
-                <div class="col-lg-4 text-center">
-			<img class="img-circle" src="img/people/robrecht.gif" height="90" width="90">
-			<h4 class="normal">Robrecht Jurriaans</h4>
-			<h5 class="normal"><i>C++, Lua, Python</i></h5>
-			<ul class="list-inline">
-			<li><a href="https://www.twitter.com/RobrechtJ" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a></li>
-			<li><a href="mailto:robrecht@perceptum.nl" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
-			</ul>
-               </div>
-           </div>
-        </div>
-    </section>-->
-
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-            <div class="col-lg-12 text-center">
-                <h2>Verdere vragen?</h2>
-            </div>
-                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>E-mail ons:</h3>
-                        <p><a class="mailer" href="mailto:info@codecult.nl" target="_blank">info@codecult.nl</a></p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Bel ons:</h3>
-                        <p><i class="fa fa-phone"></i>020 705 1000</p>
-                   </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Volg ons online:</h3>
-                        <ul class="list-inline">
-                            <li><a href="https://www.facebook.com/codecult2014" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://plus.google.com/communities/102716087425361188212" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li><a href="https://www.twitter.com/codecult" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Initiatief van <a href="http://www.perceptum.nl" target="_blank">Perceptum</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="games" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Games</h2>
-                            <hr class="star-primary">
-                            <img src="img/icons/games.png" class="img-responsive img-centered small" alt="">
-                            <p>Het maakt niet uit of je games wilt maken voor tablets, PC of op sites: Hier leer je de basis waarmee jij jouw droom-game werkelijkheid kunt maken!</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Sluiten</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="sites" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Websites</h2>
-                            <hr class="star-primary">
-                            <img src="img/icons/sites.png" class="img-responsive img-centered small" alt="">
-                            <p>Leer de wonderen van de online wereld en leer de benodigde skills om zelf websites te bouwen</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Sluiten</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="apps" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Apps</h2>
-                            <hr class="star-primary">
-                            <img src="img/icons/apps.png" class="img-responsive img-centered small" alt="">
-                            <p>Zijn er bepaalde apps die jij mist op je telefoon? Maak ze zelf!</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Sluiten</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="robots" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Robots</h2>
-                            <hr class="star-primary">
-                            <img src="img/icons/robots.png" class="img-responsive img-centered small" alt="">
-                            <p>Altijd al je eigen robot willen programmeren? Ga de uitdaging aan</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Sluiten</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="js/freelancer.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-52250798-1', 'rcjurriaans.github.io');
-  ga('send', 'pageview');
-
-</script>
+    <script>
+          //$('[data-toggle="dropdown"]').bootstrapDropdownHover();
+          $.fn.bootstrapDropdownHover();
+          //$('#dropdownMenu1').bootstrapDropdownHover();
+          //$('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover();
+    </script>
+-->
 </body>
 
 </html>

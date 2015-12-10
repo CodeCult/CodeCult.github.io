@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /projects/summerschool.html
+Disallow: /projects/codeweek.html
+Disallow: /projects/workshops.html
+Disallow: 404.html
+Disallow: /projects/old/*.html

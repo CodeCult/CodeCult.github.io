@@ -5,10 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
+    <meta name="description" content="Op deze pagina kun je alle tools vinden om zelf aan de slag te gaan met programmeren.">
     <meta name="author" content="">
+	<meta name="keywords" content=" programmeren, voor, kinderen, hulpmiddelen, code.org, zelfstudie, workshops, websites, ontwikkelen, programmeerles, cursus, informatica, hulp, scratch, html, python, games, dummies, beginners, leer, programmeer, coden">
 
-    <title>Materialen</title>
+    <title>CodeCult - Zelfstudie</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -23,33 +24,80 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-68120299-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        // <script>
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // }); 
+    // </script>
+    <style>
+    @media (max-width: 1349px) {
+      .bs-sidebar.affix {
+        display: none;
+        /*width: 213px;*/
+      }
+    }
+    @media (min-width: 1350px) {
+      .bs-sidebar.affix {
+        display: inline;
+        /*width: 213px;*/
+      }
+    }
+    </style>
 </head>
 
 <body id="page-top" class="index">
+	
+
 
     <!-- Navigation -->
         <!-- Navigation -->
     <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
     nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
     <script type="text/javascript" src="nav.js"> </script>
-
+    <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="well bs-sidebar affix" id="sidebar">
+        <h4>Kies je<br> eigen pad</h4><hr style="border-color:#2c3e50;">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#top">Samengevat</a></li>
+            <li><a href="#HourofCode">Hour of Code</a></li>
+            <li><a href="#Codecademy">Codecademy</a></li>
+            <li><a href="#CodeCombat">Code Combat</a></li>
+            <li><a href="#Scratch">Scratch</a></li>
+            <li><a href="#MIT">MIT App Inventor</a></li>
+            <li><a href="#StencylWorks">StencylWorks</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div> <!--well bs-sidebar affix-->
+ </nav>
     <header id="top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <img class="img-responsive" src="../img/icons/materials.png" width="150px" alt="">
                     <div class="intro-text">
-                        <span class="name">Materialen</span>
-                        <hr class="star-light">
-                        <div class="skills">Waar moet je <span class="emphasis">beginnen</span>? Er zijn veel <span class="emphasis">verschillende paden</span> die je als programmeur kunt afleggen. Hier een greep uit materiaal waarmee je <span class="emphasis">direct</span> aan de slag kan.</div><br>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <a href="#HourofCode"><button type="button" class="btn btn-default">Hour of Code</button></a>
-                            <a href="#Codecademy"><button type="button" class="btn btn-default">Codecademy</button></a>
-                            <a href="#CodeCombat"><button type="button" class="btn btn-default">Code Combat</button></a>
-                            <a href="#Scratch"><button type="button" class="btn btn-default">Scratch</button></a>
-                            <a href="#MIT"><button type="button" class="btn btn-default">MIT App Inventor</button></a>
-                            <a href="#StencylWorks"><button type="button" class="btn btn-default">StencylWorks</button></a>
+                        <span class="name">Zelfstudie</span>
+                        <hr class="star-light"> 
+                        <div class="col-lg-10 col-lg-offset-1">
+                        <div class="skills">Waar moet je <span class="emphasis">beginnen</span>? Er zijn veel <span class="emphasis">verschillende paden</span> die je als programmeur kunt bewandelen. Hieronder vind je materiaal waarmee je <span class="emphasis">direct</span> aan de slag kunt.</div><br>
+                        <br>
+                        <div class="skills">Liever geholpen worden?</div>
+                        <div class="col-md-4 col-md-offset-4 text-center">
+                        <div class="center-block">
+                            <h2 class="nocaps center"> Wij kunnen jou </h2>
+                            <a href="kinderen.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong> Leren programmeren</strong></a>
+                        </div></div>
                         </div>
                     </div>
                 </div>
@@ -61,13 +109,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Code.org</h2>
+                    <h1>Code.org</h1>
                     <hr class="star-primary">
-                    <h2><a href="#Codecademy"><i  class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#top"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h1><a href="#Codecademy"><i  class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                    <!-- <h1><a href="#top"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
                 </div>
             </div>
             <div class="row">
+            <div class="col-lg-12 col-lg-offset-1">
+
                 <div class="col-sm-6 col-xs-12 portfolio-item">
 			<div class="center">
                     		<a href="https://www.code.org" target="_blank">
@@ -95,20 +145,21 @@
 				</ul>
 			</div>
                </div>
-        </div>
+        </div></div>
     </section>
 
     <section class="success" id="Codecademy">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Codecademy</h2>
+                    <h1>Codecademy</h1>
                     <hr class="star-light">
-                    <h2><a href="#CodeCombat"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#HourofCode"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h1><a href="#CodeCombat"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                    <!-- <h1><a href="#HourofCode"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
                 </div>
             </div>
             <div class="row">
+            <div class="col-lg-12 col-lg-offset-1">
                 <div class="col-sm-6 col-xs-12 portfolio-item">
 			<div class="center">
                     		<a href="http://www.codecademy.com" target="_blank">
@@ -137,19 +188,21 @@
 				</ul>
 			</div>
             </div>
-        </div>
+        </div></div>
     </section>
     <section id="CodeCombat">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Code Combat</h2>
+                    <h1>Code Combat</h1>
                     <hr class="star-primary">
-                    <h2><a href="#Scratch"><i class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#Codecademy"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h1><a href="#Scratch"><i class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                    <!-- <h1><a href="#Codecademy"><i class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
                 </div>
             </div>
             <div class="row">
+            <div class="col-lg-12 col-lg-offset-1">
+
                 <div class="col-sm-6 col-xs-12 portfolio-item">
 			<div class="center">
                     		<a href="http://www.codecombat.com" target="_blank">
@@ -174,7 +227,7 @@
 				</ul>
 			</div>
             </div>
-        </div>
+        </div></div>
     </section>
 
 
@@ -182,52 +235,58 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Scratch</h2>
+                    <h1>Scratch</h1>
                     <hr class="star-light">
-                    <h2><a href="#MIT"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#CodeCombat"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h1><a href="#MIT"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                    <!-- <h1><a href="#CodeCombat"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
-			<div class="center">
-                    		<a href="http://scratch.mit.edu" target="_blank">
-                       			<img src="../img/external/scratch.png" width="50px" alt="" />
-		    		</a>
-				<h3 class="center">Wat is het?</h3>
-			</div>
-			<p>Scratch is bedoeld om kinderen van 8-14 te leren programmeren. Het is een visuele programmeeromgeving, waarmee je spellen en animaties kunt maken. Aan het programmeren komt geen code te pas: je kiest commando's en koppelt ze aan elkaar. De gemaakte projecten kunnen online worden gezet en zijn te delen met anderen.</p>
-	        </div>
+                <div class="col-lg-12 col-lg-offset-1">
+                    <div class="col-sm-6 col-xs-12 portfolio-item">
+    			        <div class="center">
+            		        <a href="http://scratch.mit.edu" target="_blank">
+               			          <img src="../img/external/scratch.png" width="50px" alt="" />
+                            </a>
+    				        <h3 class="center">Wat is het?</h3>
+    			        </div>
+            			<p>Scratch is bedoeld om kinderen van 8-14 te leren programmeren. Het is een visuele programmeeromgeving, waarmee je spellen en animaties kunt maken. Aan het programmeren komt geen code te pas: je kiest commando's en koppelt ze aan elkaar. De gemaakte projecten kunnen online worden gezet en zijn te delen met anderen.</p>
+            	    </div>
                 <div class="col-sm-3 col-xs-6 portfolio-item">
-				<img style="padding:20px;" src="../img/icons/plus.png"/>
-				<ul>
-					<li><p>Makkelijk te leren</p></li>
-					<li><p>Je spel is meteen speel- en deelbaar</p></li>
-					<li><p>Vrijheid om te maken wat <b>jij</b> wilt!</p></li>
-				</ul>
-			</div>
-			<div class="col-sm-3 col-xs-6 portfolio-item">
-				<img style="padding:20px;" src="../img/icons/minus.png"/>
-				<ul>
-					<li><p>Moeilijk om complexe dingen te maken</p></li>
-					<li><p>Resultaat is niet altijd even spannend</p></li>
-				</ul>
-			</div>
+    				<img style="padding:20px;" src="../img/icons/plus.png"/>
+    				<ul>
+    					<li><p>Makkelijk te leren</p></li>
+    					<li><p>Je spel is meteen speel- en deelbaar</p></li>
+    					<li><p>Vrijheid om te maken wat <b>jij</b> wilt!</p></li>
+    				</ul>
+    			</div>
+        		<div class="col-sm-3 col-xs-6 portfolio-item">
+    				<img style="padding:20px;" src="../img/icons/minus.png"/>
+    				<ul>
+    					<li><p>Moeilijk om complexe dingen te maken</p></li>
+    					<li><p>Resultaat is niet altijd even spannend</p></li>
+    				</ul>
+    			</div>
             </div>
+        </div>
+        <div class="row" align="center" style="padding-top:20px;">
+            <p><b>Wil je leren werken met Scratch? Kijk dan ook eens op onze <a class="emphasis" href="https://www.youtube.com/channel/UCwU3Bmn-mxmJ_V6Ot20D47g">YouTube channel</a> voor uitlegfilmpjes.</b>
         </div>
     </section>
 
-  <section id="MIT">
+    <section id="MIT">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>MIT App Inventor</h2>
+                    <h1>MIT App Inventor</h1>
                     <hr class="star-primary">
-                    <h2><a href="#StencylWorks"><i class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#Scratch"><i class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h1><a href="#StencylWorks"><i class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                    <!-- <h1><a href="#Scratch"><i class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
                 </div>
             </div>
             <div class="row">
+            <div class="col-lg-12 col-lg-offset-1">
+
                 <div class="col-sm-6 col-xs-12 portfolio-item">
 			<div class="center">
                     		<a href="http://appinventor.mit.edu/explore/" target="_blank">
@@ -253,21 +312,23 @@
 				</ul>
 			</div>
             </div>
-        </div>
+        </div></div>
     </section>
    
     <section id="StencylWorks" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>StencylWorks</h2>
+                    <h1>StencylWorks</h1>
                     <hr class="star-light">
-                    <h2><a href="#MIT"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2>
-                    <h2><a href="#top"><i style="color:white" class="fa fa-home pull-right"></i></a></h2>
+                    <!-- <h1><a href="#kinderen"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                    <!-- <h1><a href="#MIT"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
+            <div class="col-lg-12 col-lg-offset-1">
+
+                <div class="col-sm-5 portfolio-item">
 			<div class="center">
                     		<a href="https://www.stencyl.com/stencyl/overview/" target="_blank">
                        			<img src="../img/external/stencyl.png" alt="" />
@@ -276,7 +337,7 @@
 			</div>
 			<p>Maak snel een game zonder teveel de techniek in te hoeven duiken! Compleet software-pakket om spellen mee te maken, die online of mobiel gespeeld kunnen worden. Stencyl biedt de mogelijkheid om je spel naar verschillende platformen te publiceren.</p>
 	        </div>
-                <div class="col-sm-3 col-xs-6 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
 				<img style="padding:20px;" src="../img/icons/plus.png"/>
 				<ul>
 					<li><p>Op een vrij simpele manier indrukwekkende games maken</p></li>
@@ -284,7 +345,7 @@
 					<li><p>Deel je spel direct met de hele wereld!</p></li>
 				</ul>
 			</div>
-			<div class="col-sm-3 col-xs-6 portfolio-item">
+			<div class="col-sm-3 portfolio-item">
 				<img style="padding:20px;" src="../img/icons/minus.png"/>
 				<ul>
 					<li><p>Door de vele opties is het soms een beetje overweldigend</p></li>
@@ -293,13 +354,43 @@
 				</ul>
 			</div>
             </div>
-        </div>
+        </div></div>
     </section>
-     <footer class="text-center">
+
+    <section id="kinderen">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            <h1>Liever geholpen worden?</h1>
+            <hr class="star-primary">
+            <!-- <h1><a href="#StencylWorks"><i class="fa fa-arrow-circle-up pull-right"></i></a></h1> -->
+            <!-- <h1><a href="#top"><i class="fa fa-home pull-right"></i></a></h1> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="center-block">
+                    <h1 class="nocaps center"> Wij kunnen jou </h1>
+                    <a href="kinderen.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong> Leren programmeren</strong></a>
+                </div>
+            </div>
+
+
+
+    </section>
+    
+
+
+
+
+
+
+
+     <footer id="footer" class="text-center">
         <div class="footer-above">
             <div class="container">
             <div class="col-lg-12 text-center">
-                <h2>Verdere vragen?</h2>
+                <h1>Verdere vragen?</h1>
             </div>
                  <div class="row">
                     <div class="footer-col col-md-4">
@@ -328,7 +419,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Initiatief van <a href="http://www.perceptum.nl" target="_blank">Perceptum</a>
+                        Adres: Science Park 402, 1098 XH Amsterdam
                     </div>
                 </div>
             </div>
@@ -347,16 +438,7 @@
     <script src="../js/cbpAnimatedHeader.js"></script>
     <script src="../js/freelancer.js"></script>
 	<script src="../js/smoothscroll.js"></script>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-52250798-1', 'rcjurriaans.github.io');
-  ga('send', 'pageview');
-
-</script>
 </body>
 
 </html>

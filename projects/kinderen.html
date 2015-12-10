@@ -1,38 +1,123 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Bij CodeCult kun je als kind al leren programmeren! Hier kun je de programmeerworkshops vinden, maar ook informatie over de programmeerclub in Amsterdam.">
+    <meta name="author" content="CodeCult">
+    <meta name="keywords" content="programmeren, voor, kinderen, codecult, programmeerles, programmeerclub cursus, codeherfst, summerschool, leren, begeleiding, scholen, scratch, html, css, oefenen, hulp, OBA, IJburg, buurtcentrum, workshop, workshops, codeclub, creatief, python, scratchles, programmeerclub">
 
-    <title>Kinderen - CodeCult</title>
+
+    <title>CodeCult - Leren programmeren voor kinderen, programmeerworkshops, programmeerclub en summerschools!</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/freelancer.css" rel="stylesheet" type="text/css">
+    <!-- <link href="../css/freelancer.css" rel="stylesheet" type="text/css"> -->
 
     <!-- Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
     <link href="../css/extra.css" rel="stylesheet" type="text/css">
+    <link href="../css/form.css" rel="stylesheet" type="text/css">
+    <!-- <link href="../css/form2.css" rel="stylesheet" type="text/css"> -->
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-68120299-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    // <script>
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // }); 
+    // </script>
+
+    <script type="text/javascript">
+              /**
+     * @license
+     *
+     * H5F 1.1.1
+     * See https://github.com/ryanseddon/H5F/ for details.
+     *
+     * Copyright (c) 2013 Ryan Seddon
+     *
+     * Permission is hereby granted, free of charge, to any person
+     * obtaining a copy of this software and associated documentation
+     * files (the "Software"), to deal in the Software without
+     * restriction, including without limitation the rights to use,
+     * copy, modify, merge, publish, distribute, sublicense, and/or sell
+     * copies of the Software, and to permit persons to whom the
+     * Software is furnished to do so, subject to the following
+     * conditions:
+     *
+     * The above copyright notice and this permission notice shall be
+     * included in all copies or substantial portions of the Software.
+     *
+     * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+     * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+     * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+     * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+     * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+     * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+     * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+     * OTHER DEALINGS IN THE SOFTWARE.
+     */
+    (function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+        </script>
+
+        <script>
+        function resetForm($form) {
+          setTimeout( function() {
+            $form.find('input:text, input:password, input:file, select, textarea').val('');
+            $form.find('input:radio, input:checkbox')
+                 .removeAttr('checked').removeAttr('selected');
+               } , 2000);
+        }
+        </script>
+
+        <script>
+        function reactie() {
+          document.getElementById("verzonden").innerHTML= "Bedankt, je inschrijving is geregistreerd! Wij zullen spoedig contact met je opnemen.";
+        } 
+        </script>
 </head>
 
 <body id="page-top" class="index">
+	
+
 
         <!-- Navigation -->
     <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
     nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
     <script type="text/javascript" src="nav.js"> </script>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <div class="well bs-sidebar affix" id="sidebar">
+            <h4>Workshops</h4><hr style="border-color:#2c3e50;">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#top">Samengevat</a></li>
+                <li><a href="#kerst">Kerst</a></li>
+                <li><a href="#programmeerclub">Program-<br>meerclub</a></li>
+                <li><a href="#summerschool">Summer-<br>school</a></li>
+                <li><a href="#codeherfst">CodeHerfst</a></li>
+                <li><a href="#footer">Contact</a></li>
+              </ul>
+            </div> <!--well bs-sidebar affix-->
+          </div>
+    </nav>
 
     <header id="top">
         <div class="container">
@@ -40,14 +125,26 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="../img/icons/robots.png" width="100px" alt="">
                     <div class="intro-text">
-                        <span class="name">Kinderen</span>
+                    <h1>Leren programmeren:<br>Kinderen en Jongeren</h1>
+                        <!-- <span class="name">Kinderen en Jongeren</span> -->
                         <hr class="star-light">
-                        <div class="skills">Programmeerles voor kinderen</div>
-                        <br/>
+                        <div class="skills">Programmeerles voor jongeren vanaf 9 jaar</div>
+                        <br>
+                        <div class="row">
+                          <div class="col-lg-10 col-lg-offset-1">
+                            <p align="left">Krijgt uw kind op school geen programmeerles? Of zijn uw kinderen zo enthousiast over programmeren en kunnen zij er geen genoeg van krijgen? CodeCult geeft het gehele jaar les in programmeren! <br><br> 
+                            In de zomer organiseert CodeCult de <span class="emphasis"> SummerSchool </span> in meerdere steden in Nederland. De Summerschool duurt een week en tijdens deze week maken de kinderen een eigen game. Verder leren de kinderen ook meer over computerwetenschappen, bijvoorbeeld over cryptografie. <br><br> 
+                            Bij de <span class="emphasis">CodeHerfst</span>is het programma iets minder intensief, de lessen zijn alleen in de ochtend of in de middag. Gedurende deze week  werken de kinderen aan hun eigen game of website.<br><br> In de kerstvakantie is het tijd voor <span class="emphasis">CodeKerst</span>. CodeKerst bestaat uit één dag waarin kinderen een moderne kerstkaart gaan maken! <br><br>
+                            Voor de fanatiekelingen is er de <span class="emphasis">programmeerclub</span>! Deze club is elke week, behalve in de schoolvakanties, op een vaste dag.  Alle kinderen werken aan een eigen project. Zij ondersteunen en helpen elkaar maar er is natuurlijk ook altijd een trainer aanwezig om te helpen.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                         <div class="btn-group" role="group" aria-label="...">
-                            <a href="#summerschool"><button type="button" class="btn btn-default">Summer School</button></a>
+                        <a href="#kerst"><button type="button" class="btn btn-default">Kerst</button></a>
+                            <a href="#programmeerclub"><button type="button" class="btn btn-default">Programmeerclub</button></a>
+                            <a href="#summerschool"><button type="button" class="btn btn-default">SummerSchool</button></a>
                             <a href="#codeherfst"><button type="button" class="btn btn-default">CodeHerfst</button></a>
-                            <a href="#programmeerclub"><button type="button" class="btn btn-default">Codeclub</button></a>
                         </div>
                     </div>
                 </div>
@@ -55,89 +152,488 @@
         </div>
     </header>
 
-    <section id="summerschool">
-        <div class="container">
+<section id="kerst">
+<div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>SummerSchool</h2>
+                    <h1>Kerst met CodeCult!</h1>
                     <hr class="star-primary">
-                    <h2><a href="#codeherfst"><i  class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#top"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Wat is het?</h3>
-                <p>Een week lang programmeren met leeftijdsgenoten, met als einddoel het bouwen van je eigen spel.<br>
-                <a href="http://www.conclusion.nl/nl-nl/actueel/2015/08/25/11/23/summerschool-codecult/">Lees hier een verslag van onze SummerSchool in Utrecht!</a></p>
-                </div>
-            <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Details</h3>
-                <p>Deze zomer hebben we 4 hele succesvolle SummerSchools gegeven. Begin juli hebben in totaal 26 kinderen uit Amsterdam hun eigen droomspel gemaakt. In augustus hebben we in Utrecht 15 en in Arnhem 14 deelnemers de wonderen wereld van programmeren mogen introduceren.</p>
-            </div>
-            <h3 class="center">Tot volgend jaar!</h3>
-        </div>
-    </section>
+            <div id="scratchkerst" class="col-lg-10 col-lg-offset-1 text-center">
 
-    <section class="success" id="codeherfst">
+
+                </div>
+            <div id="mobilecard1" class="col-lg-10 col-lg-offset-1 text-center"><center>
+                <img id="mobilecard" min-width="300px" class="img-responsive" src="../img/promo/kerst.gif" alt="kerst"></center>
+
+                </div>
+
+
+              </div>
+            <div class="row">
+
+                <div class="col-lg-10 col-lg-offset-1 ">
+                <br>
+                <p>Het wordt al langzaam kouder, de herfstvakantie is voorbij en volgende week komt Sinterklaas alweer aan! Tijd dus om te bedenken wat je in de kerstvakantie gaat doen.</p>
+
+                <p>In de kerstvakantie kun je bij CodeCult kerstkaarten maken om aan al je vrienden, ooms, tantes, opa’s en oma’s te sturen. Dat zijn niet zomaar kerstkaarten, maar bewegende kerstkaarten die je zelf hebt geprogrammeerd! Wat dacht je bijvoorbeeld van dwarrelende sneeuwvlokken, twinkelende lichtjes of cadeautjes die onder de boom verschijnen? In de kerstworkshop is genoeg te leren voor beginnende en gevorderde scratch-programmeurs!</p>
+
+                <p>Hou dus maandag 21 december vrij als je in de buurt van Amsterdam woont en dinsdag 22 december als je liever naar de workshop in Utrecht komt! Oh en vergeet niet onderstaand formulier in te vullen!</p>
+
+                <p>Het is de hele dag, vanaf 10 uur tot half 5. De kosten voor deze leuke en leerzame dag bedragen 65 euro per deelnemer.</p>
+
+                <p><b>Locatie op 21/12: </b>Science Park 402, Amsterdam <br> <b>Locatie op 22/12: </b>Herculesplein 80, Utrecht</p> 
+
+                <p align="center"><b>Inschrijven</b></p>
+
+
+                
+                <div class="ss-required-asterisk" aria-hidden="true">* Verplicht</div>
+                <div class="ss-form"><form action="https://docs.google.com/a/perceptum.nl/forms/d/1TXr4QV5wyC2hxSQKjkozux0NSV5zRLI3jGSIvhfsi7w/formResponse" method="POST" id="ss-formkerst" target="_self" onsubmit="reactie()"><ol role="list" class="ss-question-list" style="padding-left: 0">
+                <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_388722594"><div class="ss-q-title">Volledige naam zoon/dochter
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.388722594" value="" class="ss-q-short" id="entry_388722594" dir="auto" aria-label="Volledige naam zoon/dochter  " aria-required="true" required="" title="">
+                <div class="error-message" id="1464963379_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_187827954"><div class="ss-q-title">Leeftijd
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.187827954" value="" class="ss-q-short" id="entry_187827954" dir="auto" aria-label="Leeftijd  " aria-required="true" required="" title="">
+                <div class="error-message" id="120181459_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1047025599"><div class="ss-q-title">E-mailadres ouder(s)
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.1047025599" value="" class="ss-q-short" id="entry_1047025599" dir="auto" aria-label="E-mailadres ouder(s)  " aria-required="true" required="" title="">
+                <div class="error-message" id="1554412437_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1111704863"><div class="ss-q-title">Telefoon ouder(s)
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.1111704863" value="" class="ss-q-short" id="entry_1111704863" dir="auto" aria-label="Telefoon ouder(s)  " aria-required="true" required="" title="">
+                <div class="error-message" id="1617653331_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1339805984"><div class="ss-q-title">Locatie?
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="radiogroup" aria-label="Locatie?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><br><input type="radio" name="entry.1642740737" value="Amsterdam" id="group_1642740737_1" role="radio" class="ss-q-radio" aria-label="Amsterdam" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Amsterdam</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1642740737" value="Utrecht" id="group_1642740737_2" role="radio" class="ss-q-radio" aria-label="Utrecht" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Utrecht</span>
+                </label></li></ul>
+                <div class="error-message" id="1339805984_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_569001308"><div class="ss-q-title">Programmeerervaring? (bijvoorbeeld een keer iets in Scratch gemaakt)
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="radiogroup" aria-label="Programmeerervaring? (bijvoorbeeld een keer iets in Scratch gemaakt)  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><br><input type="radio" name="entry.612773760" value="Ja" id="group_612773760_1" role="radio" class="ss-q-radio" aria-label="Ja" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Ja</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.612773760" value="Nee" id="group_612773760_2" role="radio" class="ss-q-radio" aria-label="Nee" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Nee</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.612773760" value="__other_option__" id="group_612773760_3" role="radio" class="ss-q-radio ss-q-other-toggle" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Anders:</span></label>
+                <span class="ss-q-other-container goog-inline-block"><br><input type="text" name="entry.612773760.other_option_response" value="" class="ss-q-other" id="entry_612773760_other_option_response" dir="auto" aria-label="Other"></span>
+                </li></ul>
+                <div class="error-message" id="569001308_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1565606493"><div class="ss-q-title">Heeft uw zoon/dochter een eigen e-mailadres?
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="radiogroup" aria-label="Heeft uw zoon/dochter een eigen e-mailadres?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><br><input type="radio" name="entry.1176498313" value="Ja" id="group_1176498313_1" role="radio" class="ss-q-radio" aria-label="Ja" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Ja</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1176498313" value="Nee" id="group_1176498313_2" role="radio" class="ss-q-radio" aria-label="Nee" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Nee</span>
+                </label></li></ul>
+                <div class="error-message" id="1565606493_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1625685512"><div class="ss-q-title">Heeft uw zoon/dochter een Scratch account?
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="radiogroup" aria-label="Heeft uw zoon/dochter een Scratch account?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><br><input type="radio" name="entry.1719181448" value="Ja" id="group_1719181448_1" role="radio" class="ss-q-radio" aria-label="Ja" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Ja</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1719181448" value="Nee" id="group_1719181448_2" role="radio" class="ss-q-radio" aria-label="Nee" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Nee</span>
+                </label></li></ul>
+                <div class="error-message" id="1625685512_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_508239905"><div class="ss-q-title">Is het mogelijk een eigen laptop mee te nemen?
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="radiogroup" aria-label="Is het mogelijk een eigen laptop mee te nemen?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><br><input type="radio" name="entry.642845731" value="Ja" id="group_642845731_1" role="radio" class="ss-q-radio" aria-label="Ja" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Ja</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.642845731" value="Nee" id="group_642845731_2" role="radio" class="ss-q-radio" aria-label="Nee" required="" aria-required="true"></span>
+                <span class="ss-choice-label">Nee</span>
+                </label></li></ul>
+                <div class="error-message" id="508239905_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_990043075"><div class="ss-q-title">Opmerkingen
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><textarea name="entry.990043075" rows="8" cols="0" class="ss-q-long" id="entry_990043075" dir="auto" aria-label="Opmerkingen  "></textarea>
+                <div class="error-message" id="1850360480_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item  ss-checkbox"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1749252531"><div class="ss-q-title">Hoe heeft u ons gevonden?
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="group" aria-label="Hoe heeft u ons gevonden?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><br><input type="checkbox" name="entry.748877195" value="Facebook" id="group_748877195_1" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Facebook</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.748877195" value="Twitter" id="group_748877195_2" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Twitter</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.748877195" value="Vrienden/Familie" id="group_748877195_3" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Vrienden/Familie</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.748877195" value="Flyer" id="group_748877195_4" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Flyer</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.748877195" value="Google" id="group_748877195_5" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Google</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.748877195" value="School" id="group_748877195_6" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">School</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.748877195" value="__other_option__" id="group_748877195_7" role="checkbox" class="ss-q-checkbox ss-q-other-toggle"></span>
+                <span class="ss-choice-label">Anders:</span></label>
+                <span class="ss-q-other-container goog-inline-block"><br><input type="text" name="entry.748877195.other_option_response" value="" class="ss-q-other" id="entry_748877195_other_option_response" dir="auto" aria-label="Other"></span>
+                </li></ul>
+                <div class="error-message" id="1749252531_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div>
+                <input type="hidden" name="draftResponse" value="[,,&quot;1372221889391439400&quot;]
+                ">
+                <input type="hidden" name="pageHistory" value="0">
+
+                <input type="hidden" name="fvv" value="0">
+
+
+                <input type="hidden" name="fbzx" value="1372221889391439400">
+
+                <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                <input type="submit" name="submit" value="Verzenden" id="ss-submit" class="jfk-button jfk-button-action " onclick="resetForm($('#ss-formkerst'));"></td>
+                </tr></tbody></table></div></ol></form></div>
+                <p id="verzonden"></p>
+
+
+
+
+
+                </div>
+            </div>
+</div>
+</section>
+
+
+
+    <section id="programmeerclub" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>CodeHerfst</h2>
+                    <h1 class="toolarge">Programmeerclub </h1>
                     <hr class="star-light">
-                    <h2><a href="#programmeerclub"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2>
-                    <h2><a href="#summerschool"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2>
+                    <!-- <h2><a href="#summerschool"><i style="color:white" class="fa fa-arrow-circle-down pull-right"></i></a></h2> -->
+                    <!-- <h2><a href="#codeherfst"><i style="color:white" class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
+            <div class="col-lg-10 col-lg-offset-1"><center>
+                <img class="img-responsive" src="../img/overons/obaflyerfoto.jpg" alt="programmeerclub"></center></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h3 class="center">Wat is het?</h3>
-                <p>Tijdens de herfstvakantie gaan wij uiteraard door met onze missie om zo veel mogelijk kinderen kennis te laten maken met programmeren. Deze keer hebben de deelnemers keuze uit twee trajecten: Web Development (Hoe maak je je eigen website?) of Game Development (Hoe maak je je eigen spel?).</p>
-            </div>
-            <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Details</h3>
-                <p>Van 19 - 23 oktober organiseren we de CodeHerfst: twee groepen van 15 kinderen gaan onder begeleiding 5 ochtenden of middagen programmeerlessen volgen. <br>
-                Kies voor:</p>
-				<ul>
-					<li>'s Ochtends: Groep Web development. Maak je eigen website! Leer HTML, CSS (eventueel Javascript & jQuery). Als je al voorkennis hebt, kunnen we je ook backend development in Django leren. </li>
-					<li>'s Middags: Groep Game development. Bouw een game die je zelf zou willen spelen! Hiervoor gebruiken we Scratch maar in overleg kunnen we ook een andere taal gebruiken</li>
-				</ul>
-                <p>Kosten: &#8364;295,- </p>
-            </div>
-            <h3 class="center"><u><a href="codeherfst.html" style="color:white;">Meer info</a></u></h3>
-        </div>
-    </section>
+                <p>Wekelijks op een vaste dag, samen met andere enthousiastelingen werken aan een eigen programmeerproject. Dit kan individueel of in samenwerking met een vriend of vriendin.</p>
+            </div></div>
 
-    <section id="programmeerclub">
+            <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h3 class="center">Details</h3>
+                <p>Bij de CodeCult Programmeerclub kunnen kinderen onder begeleiding van codemeesters een schooljaar lang aan een eigen programmeerproject werken. Dit kan individueel of in samenwerking met een vriend of vriendin. We stellen samen met uw kind een programmeerdoel op (een eigen website, een spelletje of iets anders) en gaan hier wekelijks mee aan de slag. We gaan het hele schooljaar door voor een vergoeding van 59 euro per maand per deelnemer.</p>
+                <p> De programmeerclub is een wekelijkse bijeenkomst die plaatsvindt in de <strong>OBA IJburg</strong> (Diemerparklaan 79), iedere <strong>maandag van 15:30 tot 17:00 uur</strong> (m.u.v. schoolvakanties). We beginnen in week 44 (maandag 26 oktober 2015) en gaan door tot en met week 26 (maandag 27 juni 2016). Instromen kan op ieder moment en lidmaatschap is per maand opzegbaar.</p>
+                <p>Twijfelt uw kind nog? <strong>Schrijf hem/haar in voor een gratis proefles!</strong></p>
+                </div></div>
+                
+
+            <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h3 class="center">De club zit voorlopig vol!</h3>
+                <p class="center"><strong>Wie zich inschrijft komt op de wachtlijst. <br>U hoort van ons als er een plaats vrijkomt of als we een nieuwe club hebben gestart.</strong></p>
+				<p><strong>NB:</strong> Het is belangrijk dat uw kind een laptop meeneemt van huis. Vragen? Bel 020-7051000.</p>
+                <div class="ss-required-asterisk" aria-hidden="true">*Verplicht veld</div>
+                <div class="ss-form"><form name="kidclub" action="https://docs.google.com/forms/d/1sJvrw76QMmQJ6xxOpgBXtXL-VDuyBhw_zoPDQlicTjA/formResponse?embedded=true" method="POST" id="ss-formclub" target="_blank" onsubmit="reactie()"><ol role="list" class="ss-question-list" style="padding-left: 0">
+                <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1409128788"><div class="ss-q-title">Volledige naam
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.1409128788" value="" class="ss-q-short" id="entry_1409128788" dir="auto" aria-label="Volledige naam  " aria-required="true" required="" title="">
+                <div class="error-message" id="191088369_errorMessage"></div>
+                <div class="required-message">Het is verplicht om dit veld in te vullen</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_99152193"><div class="ss-q-title">Leeftijd
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.99152193" value="" class="ss-q-short" id="entry_99152193" dir="auto" aria-label="Leeftijd  " aria-required="true" required="" title="">
+                <div class="error-message" id="1768144810_errorMessage"></div>
+                <div class="required-message">Het is verplicht om dit veld in te vullen</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1558532895"><div class="ss-q-title">E-mailadres ouder(s)
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.1558532895" value="" class="ss-q-short" id="entry_1558532895" dir="auto" aria-label="E-mailadres ouder(s)  " aria-required="true" required="" title="">
+                <div class="error-message" id="567843221_errorMessage"></div>
+                <div class="required-message">Het is verplicht om dit veld in te vullen</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_679057232"><div class="ss-q-title">Telefoon ouder(s)
+                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><input type="text" name="entry.679057232" value="" class="ss-q-short" id="entry_679057232" dir="auto" aria-label="Telefoon ouder(s)  " aria-required="true" required="" title="">
+                <div class="error-message" id="998765213_errorMessage"></div>
+                <div class="required-message">Het is verplicht om dit veld in te vullen</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_2067683530"><div class="ss-q-title">Opmerkingen
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                <br><textarea name="entry.2067683530" rows="8" cols="0" class="ss-q-long" id="entry_2067683530" dir="auto" aria-label="Opmerkingen" style="color:#2c3e50"></textarea>
+                <div class="error-message" id="1709175568_errorMessage"></div>
+                <div class="required-message">Het is verplicht om dit veld in te vullen</div>
+                </div></div></div>
+                <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item  ss-checkbox"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1695393573"><div class="ss-q-title">Hoe heeft u ons gevonden?
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                <ul class="ss-choices" role="group" aria-label="Hoe heeft u ons gevonden?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="Facebook" id="group_750257391_1" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Facebook</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="Twitter" id="group_750257391_2" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Twitter</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="Vrienden" id="group_750257391_3" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Vrienden</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="Flyer" id="group_750257391_4" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Flyer</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="School" id="group_750257391_5" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">School</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="Google" id="group_750257391_6" role="checkbox" class="ss-q-checkbox"></span>
+                <span class="ss-choice-label">Google</span>
+                </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.750257391" value="__other_option__" id="group_750257391_7" role="checkbox" class="ss-q-checkbox ss-q-other-toggle"></span>
+                <span class="ss-choice-label">Anders:</span></label>
+                <span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.750257391.other_option_response" value="" class="ss-q-other" id="entry_750257391_other_option_response" dir="auto" aria-label="Other"></span>
+                </li></ul>
+                <div class="error-message" id="1695393573_errorMessage"></div>
+                <div class="required-message">This is a required question</div></div></div></div>
+
+                <input type="hidden" name="draftResponse" value="[,,&quot;-698762801524606092&quot;]
+                ">
+                <input type="hidden" name="pageHistory" value="0">
+
+                <input type="hidden" name="fvv" value="0">
+
+
+                <input type="hidden" name="fbzx" value="-698762801524606092">
+
+                <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                <input type="submit" name="submit" value="Verstuur" id="ss-submit" class="jfk-button jfk-button-action" onclick="resetForm($('#ss-formclub'));">
+                </td>
+                </tr></tbody></table></div></ol></form>
+
+                </div>
+                <p id="verzonden"></p>
+
+            </div>
+            </div>
+            </div>
+    </section>
+    <section  id="summerschool">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>CodeClub </h2>
+                    <h1>SummerSchool</h1>
                     <hr class="star-primary">
-                    <h2><a href="#codeherfst"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2>
-                    <h2><a href="#top"><i  class="fa fa-home pull-right"></i></a></h2>
+                    <!-- <h1><a href="#programmeerclub"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
+                    <!-- <h2><a href="#top"><i  class="fa fa-home pull-right"></i></a></h2> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Wat is het?</h3>
-                <p>Wekelijks op een vaste avond, samen met andere enthousiastelingen werken aan een eigen programmeerproject. Dit kan individueel of in samenwerking met een vriend/vriendin.</p>
+            <div class="col-lg-6 col-lg-offset-3">
+                <img class="img-responsive" src="../img/overons/codeherfst.jpg" alt="summerschool"></div>
+
             </div>
-            <div class="col-sm-6 col-xs-12 portfolio-item">
-                <h3 class="center">Details</h3>
-                <p>We stellen samen met uw kind een programmeerdoel op (een eigen website, een spelletje, of iets anders) en gaan hier wekelijks mee aan de slag. Natuurlijk mag hij/zij ook thuis verder werken (dit moedigen we zelfs aan!).</p>
-                <p><b>Data: </b>We gaan in week 44 van start en gaan door tot en met week 26.</p>
-                <p><b>Kosten: </b>Deelname kost 59 euro per maand</p>
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-1 portfolio-item">
+                    <h3 class="center">Wat is het?</h3>
+                    <p>Een week lang programmeren, buitenspelen en andere coole activiteiten met leeftijdsgenoten, met als einddoel het bouwen van je eigen spel.<br>
+                    <a style="color:#2c3e50" href="http://www.conclusion.nl/nl-nl/actueel/2015/08/25/11/23/summerschool-codecult/" target="_blank">Lees hier een verslag over SummerSchool in Utrecht!</a></p>
+                </div>
+                <div class="col-sm-5 portfolio-item">
+                    <h3 class="center">Details</h3>
+                    <p>Deze zomer hebben we 4 zeer succesvolle SummerSchools gegeven. Begin juli hebben in totaal 26 kinderen uit Amsterdam hun eigen droomspel gemaakt. In augustus hebben we in Utrecht 15 en in Arnhem 14 deelnemers de wondere wereld van programmeren mogen introduceren. Gemiddeld kregen we van de deelnemers maar liefst een 9!</p> 
+                    <p>Bekijk hier (bijna) alle gave spellen die er gemaakt zijn:
+						<ul>
+							
+							<li><p><a style="color:#2c3e50" href="https://scratch.mit.edu/studios/1395308/">Amsterdam week 2</a></p></li>
+							<li><p><a style="color:#2c3e50" href="https://scratch.mit.edu/studios/1467220/">Utrecht</a></p></li>
+							<li><p><a style="color:#2c3e50" href="https://scratch.mit.edu/studios/1480688/">Arnhem</a></p></li>
+						</ul>                    
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <p><strong><br>Verzekerd zijn van een plekje op de volgende summerschool?<br> Laat hier je e-mailadres achter en blijf op de hoogte via de nieuwsbrief!</strong></p>
+                        <script type="text/javascript">var submitted=false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframeDown" style="display:none;" onload="if(submitted) {formSubmit('form')}"></iframe>
+                        <form name ="emailform" action="https://docs.google.com/a/perceptum.nl/forms/d/11UB1z2JayydEu9qy-8rjQMNs6JRn76t-L4ZZWj8oADA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
+                            <div role="list">
+                                <div class="ss-form-question errorbox-good" role="listitem">
+                                    <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
+                                        <div class="ss-form-entry">
+                                            <label aria-hidden="true" class="ss-q-item-label" for="entry_1057991613">
+                                                <div class="ss-q-title">E-mail:
+                                                    <label for="itemView.getDomIdToLabel()" aria-label="(Verplicht veld)"></label>
+                                                </div>
+                                                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                                            </label>
+                                            <input type="text" name="entry.1057991613" placeholder="ik@voorbeeld.nl" class="ss-q-short" id="entry_1057991613" dir="auto" aria-label="E-mail  " aria-required="true" required="" title="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="draftResponse" value="[,,&quot;1836563596584766178&quot;]">
+                                <input type="hidden" name="pageHistory" value="0">
+                                <input type="hidden" name="fromEmail" value="false">
+                                <input type="hidden" name="fbzx" value="1836563596584766178">
+                                <span id="form"><input type="submit" name="submit" value="Verzenden" id="ss-submit"></span>
+                            </div>
+                        </form>
+                    <h3 class="center">Tot van de zomer!</h3>
+                </div>
             </div>
-            <p class="center" style="color:#18bc9c;">Wilt u uw kind aanmelden? <a href="https://docs.google.com/a/perceptum.nl/forms/d/1sJvrw76QMmQJ6xxOpgBXtXL-VDuyBhw_zoPDQlicTjA/viewform" target=_blank><u>Dat kan door dit formulier in te vullen.</u></a>
         </div>
     </section>
 
-     <footer class="text-center">
+        <section class="success" id="codeherfst">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>CodeHerfst</h1>
+                        <hr class="star-light">
+                        <!-- <h1><a href="#programmeerclub"><i  class="fa fa-arrow-circle-down pull-right"></i></a></h1> -->
+                        <!-- <h2><a href="#top"><i  class="fa fa-arrow-circle-up pull-right"></i></a></h2> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                    <center>
+                        <img class="img-responsive" src="../img/overons/programmeerclub.jpg" alt="codeherfst">
+                    </center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="center nocaps">De Codeherfst was een daverend succes! </h3>
+                    </div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <p><strong><br>Verzekerd zijn van een plekje op de volgende codeherfst?<br> Laat hier je e-mailadres achter en blijf op de hoogte via de nieuwsbrief!</strong></p>
+                            <script type="text/javascript">var submitted=false;</script>
+                            <iframe name="hidden_iframe" id="hidden_iframeDown" style="display:none;" onload="if(submitted) {formSubmit('form')}"></iframe>
+                            <form name ="emailform" action="https://docs.google.com/a/perceptum.nl/forms/d/11UB1z2JayydEu9qy-8rjQMNs6JRn76t-L4ZZWj8oADA/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
+                                <div role="list">
+                                    <div class="ss-form-question errorbox-good" role="listitem">
+                                        <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
+                                            <div class="ss-form-entry">
+                                                <label aria-hidden="true" class="ss-q-item-label" for="entry_1057991613">
+                                                    <div class="ss-q-title">E-mail:
+                                                        <label for="itemView.getDomIdToLabel()" aria-label="(Verplicht veld)"></label>
+                                                    </div>
+                                                    <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                                                </label>
+                                                <input type="text" name="entry.1057991613" placeholder="ik@voorbeeld.nl" class="ss-q-short" id="entry_1057991613" dir="auto" aria-label="E-mail  " aria-required="true" required="" title="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="draftResponse" value="[,,&quot;1836563596584766178&quot;]">
+                                    <input type="hidden" name="pageHistory" value="0">
+                                    <input type="hidden" name="fromEmail" value="false">
+                                    <input type="hidden" name="fbzx" value="1836563596584766178">
+                                    <span id="form"><input type="submit" name="submit" value="Verzenden" id="ss-submit"></span>
+                                </div>
+                            </form>
+                        <h3 class="center">Tot de volgende codeherfst!</h3>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="center">Wat is het?</h3>
+                    <p>Tijdens de herfstvakantie gaan wij uiteraard door met onze missie om zo veel mogelijk kinderen kennis te laten maken met programmeren. Deze keer hebben de deelnemers keuze uit twee trajecten: Web Development (Hoe maak je je eigen website?) of Game Development (Hoe maak je je eigen spel?).</p>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3 class="center">Details</h3>
+                    <p>Van 19 - 23 oktober organiseren we de CodeHerfst: twee groepen van 15 kinderen gaan onder begeleiding 5 ochtenden of middagen programmeerlessen volgen. <br>
+                    Kies voor:</p>
+                    <ul>
+                        <li>'s Ochtends: Groep Web development. Maak je eigen website! Leer HTML, CSS (eventueel Javascript &amp; jQuery). Als je al voorkennis hebt, kunnen we je ook backend development in Django leren. </li>
+                        <li>'s Middags: Groep Game development. Bouw een game die je zelf zou willen spelen! Hiervoor gebruiken we Scratch maar in overleg kunnen we ook een andere taal gebruiken</li>
+                    </ul>
+                    <p>De kosten van de CodeHerfst bedragen 245 euro per kind.</p>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h3> Wacht niet te lang met inschrijven, de CodeCult summerschools zaten helemaal vol!</h3>
+                </div>
+                <div class="col-md-5 col-lg-offset-1" >
+                    <div class="center-block">
+                        <a href="codeherfst.html#formulier" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong> Voorkom teleurstellingen: <br> Klik hier en schrijf je direct in!</strong></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="center-block">
+                        <a href="codeherfst.html" class="btn btn-lg btn-outline center-block" style="background-color:#2c3e50; border-color:#2c3e50"> <strong>Toch nog aan het twijfelen? <br/> Klik hier voor meer informatie</strong></a>
+                    </div>
+                </div>
+                </div> -->
+            </div>
+        </section>
+    
+
+     <footer id="footer" class="text-center">
         <div class="footer-above">
             <div class="container">
             <div class="col-lg-12 text-center">
-                <h2>Verdere vragen?</h2>
+                <h2>Verdere vragen?</h1>
             </div>
                  <div class="row">
                     <div class="footer-col col-md-4">
@@ -166,11 +662,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Initiatief van <a href="http://www.perceptum.nl" target="_blank">Perceptum</a>
+                        Adres: Science Park 402, 1098 XH Amsterdam
                     </div>
                 </div>
             </div>
         </div>
+
     </footer>
     <div class="scroll-top page-scroll visible-xs visble-sm">
         <a class="btn btn-primary" href="#top">
@@ -179,22 +676,71 @@
     </div>
 
     <script src="../js/jquery-1.10.2.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="../js/classie.js"></script>
-    <script src="../js/cbpAnimatedHeader.js"></script>
-    <script src="../js/freelancer.js"></script>
-    <script src="../js/smoothscroll.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script async src="../js/bootstrap.min.js"></script>
+    <script async src="../js/jquery.easing.js"></script>
+    <script async src="../js/classie.js"></script>
+    <script async src="../js/cbpAnimatedHeader.js"></script>
+    <script async src="../js/freelancer.js"></script>
+    <script async src="../js/smoothscroll.js"></script>
+    <script type="text/javascript">
+        /**
+        * Removes previous feedback message and posts a new one
+        * Also provides basic frontend e-mail validation
+        **/
+        function formSubmit(flag){
+            var confirm = document.getElementById('confirm');
+            var wrong = document.getElementById('wrong');
+            
+            // Remove old feedback, if it is present.
+            if(confirm) {
+                confirm.parentNode.removeChild(confirm);
+            }
+            if(wrong) {
+                wrong.parentNode.removeChild(wrong);
+            }
 
-  ga('create', 'UA-52250798-1', 'rcjurriaans.github.io');
-  ga('send', 'pageview');
+            // Create HTML to append to div
+            var text = "<div id='confirm' style='color:black;'>Je reactie is ontvangen!</div>";
+            var errorText = "<div id='wrong' style='color:red'>Sorry, dat lijkt niet op een e-mailadres!</div>"
+            
+            // Get user's emailaddress
+            var userInput = document.forms['emailform']['entry.1057991613'].value;
 
-</script>
+            // using http://www.w3schools.com/js/js_form_validation.asp
+            var posAt = userInput.indexOf("@");
+            var posDot = userInput.lastIndexOf(".");
+
+            /**
+            * Check if:
+            * - @ is not first character
+            * - There are at least two characters between @ and the last dot
+            * - There are at least two characters following the last dot 
+            * If userInput fails one of these, an error is appended
+            * If userInput passes all of them, a confirmation is appended
+            **/
+            if(posAt < 1 || posDot < posAt+2 || posDot+2 > userInput.length) {
+                var div = document.getElementById(flag);
+                div.innerHTML = div.innerHTML + errorText;
+                return false;
+            }
+            else {
+                var div = document.getElementById(flag);
+                div.innerHTML = div.innerHTML + text;
+                return true;
+            }
+            
+        }
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        if ( document.location.href.indexOf('#kerst') > -1 ) {
+            $('#scratchkerst').html('<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/86486732/?autostart=true" frameborder="0"></iframe>');
+        }
+        else {
+          $('#scratchkerst').html('<iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/86486732/?autostart=false" frameborder="0"></iframe>');
+        }
+    });
+        </script>
 </body>
 
 </html>

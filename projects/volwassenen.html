@@ -6,25 +6,57 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Volwassenen</title>
+    <meta name="description" content="Leer programmeren bij codecult! Op deze pagina kunt u programmeerworkshops voor volwassenen vinden.">
+    <meta name="author" content="CodeCult">
+	<meta name="keywords" content=" programmeren, voor, kinderen, volwassenen, programmeercursus, programmeerles, programmeertaal, programmeerworkshops, workshops, websites, ontwikkelen, programmeerles, cursus, informatica, hulp, scratch, html, python, games, dummies, beginners, leer, programmeer, coden">
+	
+    <title>CodeCult - Programmeerworkshops voor volwassenen </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/freelancer.css" rel="stylesheet" type="text/css">
+    <!-- <link href="../css/freelancer.css" rel="stylesheet" type="text/css"> -->
 
     <!-- Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
     <link href="../css/extra.css" rel="stylesheet" type="text/css">
+    <link href="../css/form.css" rel="stylesheet" type="text/css">
+
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-68120299-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script src="../js/head.core.min.js"></script>
+    <script>
+        head.load("../js/jquery-1.10.2.js", "../js/bootstrap.min.js", "../js/smoothscroll.js", "../js/jquery.easing.js", "../js/classie.js", "../js/cbpAnimatedHeader.js", "../js/freelancer.js", "../js/dropdownhover.js");
+    </script>
+    <script>
+    function resetForm($form) {
+      setTimeout( function() {
+        $form.find('input:text, input:password, input:file, select, textarea').val('');
+        $form.find('input:radio, input:checkbox')
+             .removeAttr('checked').removeAttr('selected');
+           } , 2000);
+    }
+    </script>
+
+    <script>
+    function reactie() {
+      document.getElementById("verzonden").innerHTML= "Bedankt, je inschrijving is geregistreerd! Wij zullen spoedig contact met je opnemen.";
+    } 
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -33,21 +65,21 @@
     <!-- Er is nu een universele navigationbar file. Niet super gebruiksvriendelijk (zie html code onderin
     nav.js), maar wel handiger dan kopiëren plakken en de enige optie zonder php oid. -->
     <script type="text/javascript" src="nav.js"> </script>
-
+</nav>
     <header id="top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="../img/icons/summerschool_alt.png" width="150px" alt="">
+                    <img class="img-responsive" src="../img/icons/workshops.png" width="150px" alt="volwassenen">
                     <div class="intro-text">
-                        <span class="name">Volwassenen</span>
+                    <h1>Leren programmeren: volwassenen</h1>
+                        <!-- <span class="name">Volwassenen</span> -->
                         <hr class="star-light">
-                        <div class="skills" >Wij willen de <span class="emphasis">wonderen wereld van programmeren</span> niet alleen voor de nieuwe <br>generatie toegangelijk maken, maar ook voor alle <span class="emphasis">leergierige volwassenen.</span> <br>Daarom bieden wij ook de volgende trajecten aan.</div>
+                        <div class="skills" >Wij willen de <span class="emphasis">wereld van programmeren</span> niet alleen voor de nieuwe generatie toegankelijk maken maar ook voor leergierige volwassenen. Want up-to-date blijven is vandaag de dag meer dan een smartphone bezitten. Leer programmeren, en blijf bij in de wereld van ICT. <br> Wij bieden de volgende cursussen aan. </div>
                         <br>
                         <div class="btn-group" role="group" aria-label="...">
-                            <a href="#bijscholing"><button type="button" class="btn btn-default">Bijscholing</button></a>
-                            <a href="#compthink"><button type="button" class="btn btn-default">Computational thinking</button></a>
-                            <a href="#machine"><button type="button" class="btn btn-default">Machine learning</button></a>
+                            <a href="#basiscursus"><button type="button" class="btn btn-default">Basiscursus</button></a>
+                            <a href="#gevorderden"><button type="button" class="btn btn-default">Gevorderden Cursus</button></a>
                         </div>
                     </div>
                 </div>
@@ -55,23 +87,126 @@
         </div>
     </header>
 
-    <section id="#">
+    <section id="basiscursus">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Deze pagina is nog onder constructie</h2>
+                    <h1>Basiscursus</h1>
                     <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                <p>Overweegt u om een carrière switch te maken? Wilt u iets nieuws leren of bent u simpelweg benieuwd hoe programmeren werkt? Dan bent u bij CodeCult aan het juiste adres!
+				Voor het leren van de basisconcepten van programmeren gebruiken wij Python. Dit is een fijne programmeertaal die makkelijk te leren is en voor vele doeleinden gebruikt kan worden. Wij helpen u graag op weg in de wereld van programmeren, maar u moet het zelf doen. 
+				Wij bieden goede en enthousiaste begeleiding. Mocht u geïnteresseerd zijn of nog vragen hebben? Neem dan gerust contact met ons op.
+
+                </p>
                 </div>
             </div>
             
         </div>
     </section>
+	
+
+    <section id="gevorderden" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Gevorderden cursus</h1>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+
+                <p>
+                CodeCult biedt workshops aan voor jongeren en volwassenen die de basis van het programmeren al onder de knie hebben. 
+				Computerwetenschap gaat veel verder dan for-loops schrijven, en wij helpen u graag meer te leren over onderwerpen als Machine Learning, Decision-theory, Cryptografie en Natural Language Processing.</p>
+                <ul>
+                    <li><p> <span class="emphasis">Machine Learning:</span> : U leert een aantal modellen te implementeren en testen op een standaard dataset. De workshop begint rustig met lineaire regressie maar bijvoorbeeld neurale netwerken zullen ook zeker aan bod komen!</p></li>
+                    <li><p><span class="emphasis">Decision-theory:</span> U leert autonome agenten schrijven die de best mogelijke actie kiezen, gegeven wat zij over de omgeving weten. Een deel gaat over het plannen van strategieën, een deel over het leren van de omgeving.</li>
+                    <li><p><span class="emphasis">Cryptografie:</span> U leert verschillende crypto grafische sleutels kennen en ontcijferen.</p></li>
+                    <li><p><span class="emphasis">Natural Language Processing:</span> U leert programma's schrijven die bijvoorbeeld voorspellen welk woord er in de zin hoort, of hoe u grammaticaal correcte zinnen genereert. </p></li>
+                </ul>
+                <p>Inschrijven kan binnenkort. Neem gerust contact met ons op voor meer informatie. 
+				Heeft u de behoefte aan workshop met een ander onderwerp? Neem dan als nog contact met ons op, kijken we of er iets te regelen valt!</p>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="info">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Op de hoogte blijven?</h1>
+            <hr class="star-primary">
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-8 col-lg-offset-2">
+
+                    <div class="ss-required-asterisk" aria-hidden="true">* Required</div>
+                    <div class="ss-form"><form action="https://docs.google.com/a/perceptum.nl/forms/d/1VxQ90Fyo6uM8AgBZjJ37ZWAgAEWZqskaOKRNBVlbi2c/formResponse" method="POST" id="ss-formvolw" target="_blank" onsubmit="reactie()"><ol role="list" class="ss-question-list" style="padding-left: 0">
+                    <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1496236569"><div class="ss-q-title">Voor- en achternaam
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                    <br><input type="text" name="entry.1496236569" value="" class="ss-q-short" id="entry_1496236569" dir="auto" aria-label="Voor- en achternaam  " aria-required="true" required="" title="">
+                    <div class="error-message" id="1149224717_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                    </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1647302455"><div class="ss-q-title">E-mail adres
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                    <br><input type="text" name="entry.1647302455" value="" class="ss-q-short" id="entry_1647302455" dir="auto" aria-label="E-mail adres  " aria-required="true" required="" title="">
+                    <div class="error-message" id="1603011583_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                    </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_652955503"><div class="ss-q-title">Telefoon
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+                    <br><input type="text" name="entry.652955503" value="" class="ss-q-short" id="entry_652955503" dir="auto" aria-label="Telefoon  " aria-required="true" required="" title="">
+                    <div class="error-message" id="837608428_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                    </div></div></div>
+                    <input type="hidden" name="draftResponse" value="[,,&quot;7770537624775210943&quot;]
+                    ">
+                    <input type="hidden" name="pageHistory" value="0">
+
+                    <input type="hidden" name="fvv" value="0">
+
+
+                    <input type="hidden" name="fbzx" value="7770537624775210943">
+
+                    <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                    <input type="submit" name="submit" value="Verzenden" id="ss-submit" class="jfk-button jfk-button-action " onclick="resetForm($('#ss-formvolw'));"></td>
+                    </tr></tbody></table></div></ol></form>
+                    </div> 
+                    <p id="verzonden"></p>
+
+                    </div>
+</div>
+</div>
+
+</section>
     
      <footer class="text-center">
         <div class="footer-above">
             <div class="container">
             <div class="col-lg-12 text-center">
-                <h2>Verdere vragen?</h2>
+                <h1>Verdere vragen?</h1>
             </div>
                  <div class="row">
                     <div class="footer-col col-md-4">
@@ -100,7 +235,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Initiatief van <a href="http://www.perceptum.nl" target="_blank">Perceptum</a>
+                        Adres: Science Park 402, 1098 XH Amsterdam
                     </div>
                 </div>
             </div>
@@ -112,23 +247,14 @@
         </a>
     </div>
 
-    <script src="../js/jquery-1.10.2.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="../js/classie.js"></script>
-    <script src="../js/cbpAnimatedHeader.js"></script>
-    <script src="../js/freelancer.js"></script>
-    <script src="../js/smoothscroll.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!--     // <script src="../js/jquery-1.10.2.js"></script>
+    // <script async src="../js/bootstrap.min.js"></script>
+    // <script async src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    // <script async src="../js/classie.js"></script>
+    // <script async src="../js/cbpAnimatedHeader.js"></script>
+    // <script async src="../js/freelancer.js"></script>
+    // <script async src="../js/smoothscroll.js"></script> -->
 
-  ga('create', 'UA-52250798-1', 'rcjurriaans.github.io');
-  ga('send', 'pageview');
-
-</script>
 </body>
 
 </html>
