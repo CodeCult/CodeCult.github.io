@@ -164,19 +164,19 @@ h2 .small,
 	padding: 10px 10px;
 }
 
-@media (min-width: 779px) {
-	#actualiteiten {
-		border: 5px solid lightgray; 
-		border-radius: 100px; 
-		background-color:lightgray
+@media (min-width: 768px) {
+	#actueel {
+		border: 5px solid #ecf0f1;  
+		background-color:#ecf0f1;
+		padding: 15px;
 	}
 }
 
-@media (max-width: 778px) {
-	#actualiteiten {
-		border: 5px solid lightgray; 
-		border-radius: 5px; 
-		background-color:lightgray
+@media (max-width: 768px) {
+	#actueel {
+		border: 5px solid #ecf0f1;  
+		background-color:#ecf0f1;
+		padding: 15px;
 	}
 }
 
