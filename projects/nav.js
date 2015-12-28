@@ -66,7 +66,7 @@ document.write("                            ");
 document.write("                          <\/ul>");
 document.write("                        <\/div>");
 document.write("                    <\/li>");
-document.write("<li class=\"page-scroll\"><a href=\"sponsoring.html\" class=\"btn btn-md\" style=\"padding-top:0; padding-bottom:0; margin:5px; padding:10px 15px; display:flex;\" type=\"button\" id=\"dropdownMenu1\" >Sponsoren <\/a><\/li>");
+document.write("<li class=\"page-scroll\"><a href=\"sponsoring.html\" class=\"btn btn-md\" style=\"padding-top:0; padding-bottom:0; margin:5px; padding:10px 15px; display:flex;\" type=\"button\" id=\"dropdownMenu1\" >Partners <\/a><\/li>");
 document.write("                           ");
 
 document.write("                <\/ul>");
