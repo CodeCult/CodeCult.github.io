@@ -7,6 +7,10 @@
     color:#18bc9c;
 }
 
+.fat{
+	font-weight:bold;
+}
+
 /* Resize and center images */
 .small{
 	min-height:60px;
