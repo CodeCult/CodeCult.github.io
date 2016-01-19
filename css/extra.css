@@ -11,12 +11,20 @@
 	font-weight:bold;
 }
 
+.teaser-text{
+	font-size: 1.5em;
+}
+
 /* Resize and center images */
 .small{
 	min-height:60px;
 	max-height:180px;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.other_link{
+	color:#2c3e50;
 }
 
 
@@ -170,8 +178,8 @@ h2 .small,
 
 @media (min-width: 768px) {
 	#actueel {
-		border: 5px solid #ecf0f1;  
-		background-color:#ecf0f1;
+		border: 5px solid #ffffff;  
+		background-color:#ffffff;
 		padding: 15px;
 	}
 }
