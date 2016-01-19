@@ -19,69 +19,58 @@ document.write("                        <a href=\"#page-top\"><\/a>");
 document.write("                    <\/li>");
 document.write("                    <li class=\"page-scroll\">");
 document.write("                        <div class=\"dropdown\">");
-document.write("                          <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-document.write("                            Voor scholen");
-document.write("                            <span class=\"caret\"><\/span>");
-document.write("                          <\/button>");
-document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
-document.write("                            <li><a href=\"basisschool.html\">Basisscholen<\/a><\/li>");
-document.write("                            <!--<li><a href=\"middelbarescholen.html\">Middelbare scholen<\/a><\/li>-->");
-document.write("                          <\/ul>");
+document.write("                          <a href=\"projects\/activiteiten.html\"><button class=\"btn btn-default\"  type=\"button\" id=\"dropdownMenu1\"  aria-haspopup=\"true\" aria-expanded=\"true\">");
+document.write("                            Activiteiten");
+document.write("                            <!--<span class=\"caret\"><\/span>-->");
+document.write("                          <\/button><\/a>");
+document.write("                        <\/div>");
+document.write("                    <\/li>");
+document.write("                    <li class=\"page-scroll\">");
+document.write("                        <div class=\"dropdown\">");
+document.write("                          <a href=\"scholen.html\"><button class=\"btn btn-default\"  type=\"button\" id=\"dropdownMenu1\"  aria-haspopup=\"true\" aria-expanded=\"true\">");
+document.write("                            Scholen");
+document.write("                            <!--<span class=\"caret\"><\/span>-->");
+document.write("                          <\/button><\/a>");
 document.write("                        <\/div>");
 document.write("                    <\/li>");
 document.write("                  <li class=\"page-scroll\">");
 document.write("                        <div class=\"dropdown\">");
-document.write("                          <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-document.write("                            Voor particulieren");
-document.write("                            <span class=\"caret\"><\/span>");
-document.write("                          <\/button>");
-document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
-document.write("                            <li><a href=\"kinderen.html\">Kinderen<\/a><\/li>");
-document.write("                            <!--<li><a href=\"volwassenen.html\">Volwassenen<\/a><\/li>-->");
-document.write("                            <li><a href=\"resources.html\">Tips voor zelfstudie<\/a><\/li>");
-document.write("                          <\/ul>");
+document.write("                          <a href=\"partners.html\"><button class=\"btn btn-default\"  type=\"button\" id=\"dropdownMenu1\"  aria-haspopup=\"true\" aria-expanded=\"true\">");
+document.write("                            Partners");
+document.write("                            <!--<span class=\"caret\"><\/span>-->");
+document.write("                          <\/button><\/a>");
 document.write("                        <\/div>");
 document.write("                    <\/li>");
-document.write("                    <li class=\"page-scroll\">");
-document.write("                       <div class=\"dropdown\">");
-document.write("                          <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-document.write("                            Voor bedrijven");
-document.write("                            <span class=\"caret\"><\/span>");
-document.write("                          <\/button>");
-document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
-document.write("                            <li><a href=\"sponsoring.html\">Help CodeCult<\/a><\/li>");
-document.write("                          <\/ul>");
+document.write("");
+document.write("");
+document.write("      ");
+document.write("                  <li class=\"page-scroll\">");
+document.write("                        <div class=\"dropdown\">");
+document.write("                          <a href=\"overons.html\"><button class=\"btn btn-default\"  type=\"button\" id=\"dropdownMenu1\"  aria-haspopup=\"true\" aria-expanded=\"true\">");
+document.write("                            Over ons");
+document.write("                            <!--<span class=\"caret\"><\/span>-->");
+document.write("                          <\/button><\/a>");
 document.write("                        <\/div>");
 document.write("                    <\/li>");
-document.write("                    <!-- Ik heb hier dropdowns van gemaakt omdat dat een snelle manier was om de layout consistent te houden...maar het is niet echt nodig qua inhoud-->");
-document.write("                   <li class=\"page-scroll\">");
-document.write("                          <button class=\"btn btn-default\" type=\"button\" id=\"dropdownMenu1\" >");
-document.write("                                <li><a href=\"codeherfst.html\">CodeHerfst<\/a><\/li>");
-document.write("                          <\/button>");
-document.write("                            <!-- <li><a href=\"codeherfst.html\">CodeHerfst<\/a><\/li> -->");
-document.write("                    <\/li>");
-document.write("                    ");
+document.write("");
 document.write("                    <li class=\"page-scroll\">");
 document.write("                        <div class=\"dropdown\">");
-document.write("                          <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">");
-document.write("                            Ons team");
-document.write("                            <span class=\"caret\"><\/span>");
-document.write("                          <\/button>");
-document.write("");
-document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
-document.write("                            <li><a href=\"trainers.html#Eszter\">Eszter Fodor, <span style=\"text-transform:none\">BSc<\/span><\/a><\/li>");
-document.write("                            <li><a href=\"trainers.html#Elise\">Elise van der Pol, <span style=\"text-transform:none\">BSc<\/span><\/a><\/li>");
-document.write("                            <li><a href=\"trainers.html#Erika\">Erika Schlatter, <span style=\"text-transform:none\">BSc<\/span><\/a><\/li>");
-document.write("                            <li><a href=\"trainers.html#Timo\">Timo Mulder, <span style=\"text-transform:none\">BSc<\/span><\/a><\/li>");
-document.write("                          <\/ul>");
-document.write("                        <\/div>                        ");
+document.write("                          <a href=\"contact.html\"><button class=\"btn btn-default\"  type=\"button\" id=\"dropdownMenu1\"  aria-haspopup=\"true\" aria-expanded=\"true\">");
+document.write("                            Contact");
+document.write("                            <!--<span class=\"caret\"><\/span>-->");
+document.write("                          <\/button><\/a>");
+document.write("                        <\/div>");
 document.write("                    <\/li>");
+document.write("                    ");
+document.write("                    ");
+document.write("");
 document.write("                <\/ul>");
 document.write("            <\/div>");
 document.write("            <!-- \/.navbar-collapse -->");
 document.write("        <\/div>");
 document.write("        <!-- \/.container-fluid -->");
 document.write("    <\/nav>");
+
 
 /* 
 Originele code, gebruik om te bewerken en transformeer naar javascript op: http://www.accessify.com/tools-and-wizards/developer-tools/html-javascript-convertor/
@@ -106,63 +95,51 @@ Originele code, gebruik om te bewerken en transformeer naar javascript op: http:
                     </li>
                     <li class="page-scroll">
                         <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Voor scholen
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/basisschool.html">Basisscholen</a></li>
-                            <!--<li><a href="projects/middelbarescholen.html">Middelbare scholen</a></li>-->
-                          </ul>
+                          <a href="projects/activiteiten.html"><button class="btn btn-default"  type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Activiteiten
+                            <!--<span class="caret"></span>-->
+                          </button></a>
+                        </div>
+                    </li>
+                    <li class="page-scroll">
+                        <div class="dropdown">
+                          <a href="scholen.html"><button class="btn btn-default"  type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Scholen
+                            <!--<span class="caret"></span>-->
+                          </button></a>
                         </div>
                     </li>
                   <li class="page-scroll">
                         <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Voor particulieren
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/kinderen.html">Kinderen</a></li>
-                            <!--<li><a href="projects/volwassenen.html">Volwassenen</a></li>-->
-                            <li><a href="projects/resources.html">Tips voor zelfstudie</a></li>
-                          </ul>
+                          <a href="partners.html"><button class="btn btn-default"  type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Partners
+                            <!--<span class="caret"></span>-->
+                          </button></a>
                         </div>
                     </li>
-                    <li class="page-scroll">
-                       <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Voor bedrijven
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/sponsoring.html">Help CodeCult</a></li>
-                          </ul>
+
+
+      
+                  <li class="page-scroll">
+                        <div class="dropdown">
+                          <a href="overons.html"><button class="btn btn-default"  type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Over ons
+                            <!--<span class="caret"></span>-->
+                          </button></a>
                         </div>
                     </li>
-                    <!-- Ik heb hier dropdowns van gemaakt omdat dat een snelle manier was om de layout consistent te houden...maar het is niet echt nodig qua inhoud-->
-                   <li class="page-scroll">
-                          <button class="btn btn-default" type="button" id="dropdownMenu1" >
-                                <li><a href="projects/codeherfst.html">CodeHerfst</a></li>
-                          </button>
-                            <!-- <li><a href="projects/codeherfst.html">CodeHerfst</a></li> -->
-                    </li>
-                    
+
                     <li class="page-scroll">
                         <div class="dropdown">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Ons team
-                            <span class="caret"></span>
-                          </button>
-
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="projects/trainers.html#Eszter">Eszter Fodor, <span style="text-transform:none">BSc</span></a></li>
-                            <li><a href="projects/trainers.html#Elise">Elise van der Pol, <span style="text-transform:none">BSc</span></a></li>
-                            <li><a href="projects/trainers.html#Erika">Erika Schlatter, <span style="text-transform:none">BSc</span></a></li>
-                            <li><a href="projects/trainers.html#Timo">Timo Mulder, <span style="text-transform:none">BSc</span></a></li>
-                          </ul>
-                        </div>                        
+                          <a href="contact.html"><button class="btn btn-default"  type="button" id="dropdownMenu1"  aria-haspopup="true" aria-expanded="true">
+                            Contact
+                            <!--<span class="caret"></span>-->
+                          </button></a>
+                        </div>
                     </li>
+                    
+                    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
