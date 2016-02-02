@@ -43,7 +43,6 @@ document.write("                          <\/button>");
 document.write("                          <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
 document.write("                            <li><a href=\"kinderen.html\">Kinderen en Jongeren<\/a><\/li>");
 document.write("                                <ul>");
-document.write("                                    <li><a href=\"kinderen.html#carnaval\">CodeCarnaval<\/a><\/li>");
 document.write("                                    <li><a href=\"kinderen.html#programmeerclub\">Programmeerclub<\/a><\/li>");
 // document.write("                                    <li><a href=\"kinderen.html#codeherfst\">CodeHerfst<\/a><\/li>");
 document.write("                                <\/ul>");
